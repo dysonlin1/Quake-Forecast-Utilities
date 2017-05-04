@@ -25,7 +25,7 @@ def click_Blogger_tab():
 def get_file_location(file_number, file_type='original'):
     if ((file_type is 'analysis') | (file_type is 'old')):
         x = 160
-    else: # 'original'
+    else: # 'original' or 'new'
         x = 53
     
     y = 80 + (file_number - 1) * 148
