@@ -21,6 +21,43 @@ def locate_and_click(png_file_name):
     
 def click_Blogger_tab():
     locate_and_click('BloggerTab.png')
+    
+def click_Super_Big_button():
+    locate_and_click('SuperBigButton.png')
+    
+def click_Add_Image_Title_button():
+    locate_and_click('AddImageTitleButton.png')
+    
+def click_Add_Image_Title_field():
+    locate_and_click('AddNewImageTitleField.png')
+    
+def click_Font_Size():
+    locate_and_click('FontSize.png')
+    
+def scroll_down():
+    pyautogui.moveTo(1100, 600)
+    time.sleep(1)
+    pyautogui.scroll(-10000) # scroll down
+    time.sleep(1)
+    
+def click_Edit_area():    
+    # click bottom of Edit area
+    pyautogui.moveTo(1100, 1000)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+def click_image(y):
+    scroll_down()
+    
+    x = 700
+           
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+
 
 def get_file_location(file_number, file_type='original'):
     if ((file_type is 'analysis') | (file_type is 'old')):
