@@ -1,6 +1,25 @@
 # -*- coding: utf-8 -*-
 # station.py
 
+quake_forecast_title = {
+    'Chinese': '地震預報：',
+    'Japanese': '地震予報：',
+    'English': 'Quake Forecast: '
+}
+
+quake_signals_title = {
+    'Chinese': '地震訊號：',
+    'Japanese': '地震信号：',
+    'English': 'Quake Signals: '
+}
+
+author = {
+    'Chinese': '台灣地震預測研究所 所長\n林湧森',
+    'Japanese': '台湾地震予測研究所 所長\n林湧森',
+    'English': 'Dyson Lin\nFounder & CEO, Taiwan Quake Forecast Institute'}
+
+
+
 station = {}
 
 station['台灣各站'] = {
@@ -8,15 +27,10 @@ station['台灣各站'] = {
     'Japanese': '台湾各局', 
     'English': 'Taiwan Stations '}
 
-station['南非德本站'] = {
-    'Chinese': '南非德本站', 
-    'Japanese': '南アフリカ ダーバン局', 
-    'English': 'Durban, South Africa Station '}
-
-station['義大利法恩扎站'] = {
-    'Chinese': '義大利法恩扎站', 
-    'Japanese': 'イタリア ファエンツァ局', 
-    'English': 'Faenza, Italy Station '}
+station['宜蘭站'] = {
+    'Chinese': '宜蘭站', 
+    'Japanese': '宜蘭局', 
+    'English': 'Yilan Station '}
 
 station['南投草屯站'] = {
     'Chinese': '南投草屯站', 
@@ -53,20 +67,20 @@ station['桃園站'] = {
     'Japanese': '桃園局', 
     'English': 'Taoyuan Station '}
 
-station['宜蘭站'] = {
-    'Chinese': '宜蘭站', 
-    'Japanese': '宜蘭局', 
-    'English': 'Yilan Station '}
-
 station['台中大里站'] = {
     'Chinese': '台中大里站', 
     'Japanese': '台中大里局', 
     'English': 'Taichung Dali Station '}
 
-station['智利伊基克站'] = {
-    'Chinese': '智利伊基克站', 
-    'Japanese': 'チリ イキケ局', 
-    'English': 'Iquique, Chile Station '}
+station['南非德本站'] = {
+    'Chinese': '南非德本站', 
+    'Japanese': '南アフリカ ダーバン局', 
+    'English': 'Durban, South Africa Station '}
+
+station['義大利法恩扎站'] = {
+    'Chinese': '義大利法恩扎站', 
+    'Japanese': 'イタリア ファエンツァ局', 
+    'English': 'Faenza, Italy Station '}
 
 station['義大利卡爾塔尼塞塔站'] = {
     'Chinese': '義大利卡爾塔尼塞塔站', 
@@ -77,4 +91,9 @@ station['紐西蘭奧克蘭站'] = {
     'Chinese': '紐西蘭奧克蘭站', 
     'Japanese': 'ニュージーランド オークランド局', 
     'English': 'Auckland, New Zealand Station '}
+
+station['智利伊基克站'] = {
+    'Chinese': '智利伊基克站', 
+    'Japanese': 'チリ イキケ局', 
+    'English': 'Iquique, Chile Station '}
 
