@@ -22,6 +22,19 @@ def locate_and_click(png_file_name):
 def click_Blogger_tab():
     locate_and_click('BloggerTab.png')
     
+def click_Blog_Title():
+    #locate_and_click('BlogTitle.png')
+    pyautogui.moveTo(1147, 216)
+    time.sleep(0.1)
+    pyautogui.click() # click
+
+def click_Publish_button():
+    #x, y = pyautogui.locateCenterOnScreen('PublishButton.png', region=(1400,135, 469, 945)) # locate
+    x, y = pyautogui.locateCenterOnScreen('PublishButton.png') # locate
+    pyautogui.moveTo(x, y)
+    time.sleep(0.1)
+    pyautogui.click() # click
+    
 def click_Super_Big_button():
     locate_and_click('SuperBigButton.png')
     

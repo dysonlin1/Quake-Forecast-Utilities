@@ -18,6 +18,51 @@ author = {
     'Japanese': '台湾地震予測研究所 所長\n林湧森',
     'English': 'Dyson Lin\nFounder & CEO, Taiwan Quake Forecast Institute'}
 
+Already_happened = {
+    'Chinese': '已經發生：',
+    'Japanese': '発生しました：',
+    'English': 'Already happened: '}
+
+Within = {
+    'Chinese': '',
+    'Japanese': '',
+    'English': 'Within '}
+
+Days = {
+    'Chinese': '日以內，',
+    'Japanese': '日以內に、',
+    'English': ' days, '}
+
+Red = {
+    'Chinese': '紅：',
+    'Japanese': '赤：',
+    'English': 'Red: '}
+
+Orange = {
+    'Chinese': '橙：',
+    'Japanese': 'オレンジ：',
+    'English': 'Orange: '}
+
+Yellow = {
+    'Chinese': '黃：',
+    'Japanese': '黃：',
+    'English': 'Yellow: '}
+
+Green = {
+    'Chinese': '綠：',
+    'Japanese': '綠：',
+    'English': 'Green: '}
+
+Blue = {
+    'Chinese': '藍：',
+    'Japanese': '青：',
+    'English': 'Blue: '}
+
+Purple = {
+    'Chinese': '紫：',
+    'Japanese': '紫：',
+    'English': 'Purple: '}
+
 
 
 station = {}
@@ -96,4 +141,9 @@ station['智利伊基克站'] = {
     'Chinese': '智利伊基克站', 
     'Japanese': 'チリ イキケ局', 
     'English': 'Iquique, Chile Station '}
+
+station['上海站'] = {
+    'Chinese': '上海站', 
+    'Japanese': '上海局', 
+    'English': 'Shanghai Station '}
 
