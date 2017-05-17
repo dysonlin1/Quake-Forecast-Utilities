@@ -29,10 +29,14 @@ def click_Blog_Title():
     pyautogui.click() # click
 
 def click_Publish_button():
-    x, y = pyautogui.locateCenterOnScreen('PublishButton.png') # locate
-    pyautogui.moveTo(x, y)
-    time.sleep(0.1)
-    pyautogui.click() # click
+    locate_and_click('PublishButton.png')
+    #x, y = pyautogui.locateCenterOnScreen('PublishButton.png') # locate
+    #pyautogui.moveTo(x, y)
+    #time.sleep(0.1)
+    #pyautogui.click() # click
+
+def click_Facebook_Publish_button():
+    locate_and_click('FacebookPublishButton.png')    
     
 def click_Super_Big_button():
     locate_and_click('SuperBigButton.png')
