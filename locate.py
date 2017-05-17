@@ -29,7 +29,6 @@ def click_Blog_Title():
     pyautogui.click() # click
 
 def click_Publish_button():
-    #x, y = pyautogui.locateCenterOnScreen('PublishButton.png', region=(1400,135, 469, 945)) # locate
     x, y = pyautogui.locateCenterOnScreen('PublishButton.png') # locate
     pyautogui.moveTo(x, y)
     time.sleep(0.1)
@@ -62,7 +61,7 @@ def click_Edit_area():
     
 def click_image(y):
     scroll_down()
-    
+
     x = 700
            
     pyautogui.moveTo(x, y)
@@ -70,8 +69,6 @@ def click_image(y):
     pyautogui.click()
     time.sleep(1)
     
-
-
 def get_file_location(file_number, file_type='original'):
     if ((file_type is 'analysis') | (file_type is 'old')):
         x = 160

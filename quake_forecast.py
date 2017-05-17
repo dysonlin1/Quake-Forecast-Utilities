@@ -77,6 +77,21 @@ station['宜蘭站'] = {
     'Japanese': '宜蘭局', 
     'English': 'Yilan Station '}
 
+station['上海站'] = {
+    'Chinese': '上海站', 
+    'Japanese': '上海局', 
+    'English': 'Shanghai Station '}
+
+station['洛杉磯站'] = {
+    'Chinese': '洛杉磯站', 
+    'Japanese': 'ロサンゼルス局', 
+    'English': 'Los Angeles Station '}
+
+station['新竹綠光站'] = {
+    'Chinese': '新竹綠光站', 
+    'Japanese': '新竹綠光局', 
+    'English': 'Hsinchu Green Light Station '}
+
 station['南投草屯站'] = {
     'Chinese': '南投草屯站', 
     'Japanese': '南投草屯局', 
@@ -141,9 +156,4 @@ station['智利伊基克站'] = {
     'Chinese': '智利伊基克站', 
     'Japanese': 'チリ イキケ局', 
     'English': 'Iquique, Chile Station '}
-
-station['上海站'] = {
-    'Chinese': '上海站', 
-    'Japanese': '上海局', 
-    'English': 'Shanghai Station '}
 
