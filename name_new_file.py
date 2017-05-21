@@ -48,4 +48,3 @@ def name_new_file(file_number):
     old_file_name = locate.get_file_name(file_number, 'old')
     new_file_name = get_new_file_name(old_file_name)
     name_file(file_number, new_file_name)
-
