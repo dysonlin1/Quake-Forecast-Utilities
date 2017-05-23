@@ -1,8 +1,132 @@
 # -*- coding: utf-8 -*-
 # quake_forecast.py
 
+import locate
+import pyautogui
+import time
+import pyperclip
 from WeChat import drag_to_WeChat
 from name_new_file import name_new_file
+pyautogui.PAUSE = 0.1
+pyautogui.FAILSAFE = True
+
+def insert_Analysis_file(file_number):    
+    locate.click_Blogger_tab()
+    locate.click_Edit_area()
+    
+    if (file_number is 1):
+        pyautogui.press('enter')
+        
+    pyautogui.press('up')
+    
+    analysis_file_name = locate.get_file_name(file_number, 'analysis')    
+    (x, y) = locate.get_file_location(file_number, 'analysis')
+    
+    pyautogui.moveTo(x, y)
+    pyautogui.click()
+    time.sleep(0.5)
+    
+    if (file_number is 1):
+        (x, y) = (700, 400)
+    else:
+        (x, y) = (700, 957)
+        
+    pyautogui.dragTo(x, y, 2)
+    time.sleep(5)
+
+    locate.scroll_down()
+
+    locate.click_Edit_area()
+    
+    if (file_number is 1):
+        locate.click_image(500)
+    else:
+        locate.click_image(957)
+        
+    locate.scroll_down()
+    
+    locate.click_Super_Big_button()
+    locate.scroll_down()
+    
+    locate.click_Add_Image_Title_button()
+    locate.scroll_down()
+    
+    locate.click_Add_Image_Title_field()
+    pyautogui.tripleClick()
+ 
+    pyautogui.rightClick()
+    time.sleep(1)
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('enter')
+    time.sleep(1)
+
+    locate.click_Font_Size()
+
+    pyautogui.moveRel(0, 93)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+
+    locate.scroll_down()
+    locate.click_Edit_area()
+    pyautogui.press('up')
+
+def insert_original_file(file_number):
+    locate.click_Blogger_tab()
+    locate.click_Edit_area()
+    pyautogui.press('up')
+    
+    original_file_name = locate.get_file_name(file_number, 'original')
+    (x, y) = locate.get_file_location(file_number, 'original')
+    
+    pyautogui.moveTo(x, y)
+    pyautogui.click()
+    time.sleep(0.5)
+    
+    pyautogui.dragTo(700, 957, 2)
+    time.sleep(5)
+    locate.scroll_down()
+    
+    locate.click_Edit_area()
+    locate.click_image(957)
+    locate.scroll_down()   
+    
+    locate.click_Super_Big_button()
+    locate.scroll_down()
+    
+    locate.click_Add_Image_Title_button()
+    locate.scroll_down()
+    
+    locate.click_Add_Image_Title_field()
+    pyautogui.tripleClick()
+ 
+    pyautogui.rightClick()
+    time.sleep(1)
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('enter')
+    time.sleep(1)
+
+    locate.click_Font_Size()
+
+    pyautogui.moveRel(0, 93)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+
+    locate.scroll_down()
+    locate.click_Edit_area()
+    pyautogui.press('up')
+
+def insert_files(file_number=1):
+    for i in range(file_number):
+        insert_Analysis_file(i+1)
+        
+    for i in range(file_number):
+        insert_original_file(i+1)
 
 def name_new_files(file_number=1, to_WeChat=False):
     for i in range(file_number):
