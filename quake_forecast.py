@@ -1,5 +1,16 @@
 # -*- coding: utf-8 -*-
-# station.py
+# quake_forecast.py
+
+from WeChat import drag_to_WeChat
+from name_new_file import name_new_file
+
+def name_new_files(file_number=1, to_WeChat=False):
+    for i in range(file_number):
+        name_new_file(i+1)
+        
+    if to_WeChat:
+        for i in range(file_number):
+            drag_to_WeChat(i+1)
 
 quake_forecast_title = {
     'Chinese': '地震預報：',
