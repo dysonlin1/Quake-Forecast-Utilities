@@ -292,3 +292,7 @@ station['智利伊基克站'] = {
     'Japanese': 'チリ イキケ局', 
     'English': 'Iquique, Chile Station '}
 
+station['加拿大列治文站'] = {
+    'Chinese': '加拿大列治文站', 
+    'Japanese': 'カナダ リッチモンド局', 
+    'English': 'Richmond, Canada Station '}
