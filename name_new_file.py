@@ -25,22 +25,22 @@ def name_file(file_number, new_file_name):
     pyperclip.copy(new_file_name) # copy new file name to clipboard
     pyautogui.moveTo(x, y)
     pyautogui.click()
-    time.sleep(0.5)
+    time.sleep(1)
     
     (x, y) = locate.get_file_name_location(file_number, 'new')
     #pyautogui.moveRel(0, 42)
     pyautogui.moveTo(x, y)
     pyautogui.click()
-    time.sleep(0.5)
+    time.sleep(1)
   
     pyautogui.rightClick()
-    time.sleep(0.5)
+    time.sleep(1)
     pyautogui.press('down')
     pyautogui.press('down')
     pyautogui.press('down')
     pyautogui.press('down')
     pyautogui.press('p') # paste new file name from clip board
-    time.sleep(0.5)
+    time.sleep(1)
     pyautogui.press('enter')
     
 # Name new file
