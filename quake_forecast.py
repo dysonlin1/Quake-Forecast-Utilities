@@ -6,9 +6,76 @@ import pyautogui
 import time
 import pyperclip
 from WeChat import drag_to_WeChat
-from name_new_file import name_new_file
+#from name_new_file import name_new_file
 pyautogui.PAUSE = 0.1
 pyautogui.FAILSAFE = True
+
+#import time
+#import pyperclip
+#import pyautogui
+#import date_stamp
+#import locate
+#import time
+
+def get_date_stamp():
+    date_stamp = time.strftime("%Y-%m-%d")
+    return date_stamp
+
+def get_time_stamp():
+    time_stamp = time.strftime("%Y-%m-%d")
+    time_stamp += ' '
+    time_stamp += time.strftime("%H:%M")
+    time_stamp += ' UTC+8'
+    return time_stamp
+
+def get_new_file_name(old_file_name):   
+    old_date_stamp = old_file_name[0:10]
+    # print('Old date stamp: ' + old_date_stamp)
+  
+    new_date_stamp = get_date_stamp()
+    # print('New date stamp: ' + new_date_stamp)
+  
+    new_file_name = old_file_name.replace(old_date_stamp, new_date_stamp)
+    #print('New file name: ' + new_file_name)
+  
+    return new_file_name
+
+def name_file(file_number, new_file_name):
+    (x, y) = locate.get_file_location(file_number, 'new')
+    pyperclip.copy(new_file_name) # copy new file name to clipboard
+    pyautogui.moveTo(x, y)
+    pyautogui.click()
+    time.sleep(1)
+    
+    (x, y) = locate.get_file_name_location(file_number, 'new')
+    #pyautogui.moveRel(0, 42)
+    pyautogui.moveTo(x, y)
+    pyautogui.click()
+    time.sleep(1)
+  
+    pyautogui.rightClick()
+    time.sleep(1)
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('p') # paste new file name from clip board
+    time.sleep(1)
+    pyautogui.press('enter')
+ 
+# Name new file
+def name_new_file(file_number):
+    old_file_name = locate.get_file_name(file_number, 'old')
+    new_file_name = get_new_file_name(old_file_name)
+    name_file(file_number, new_file_name)
+
+def name_new_files(file_number=1, to_WeChat=False):
+    for i in range(file_number):
+        name_new_file(i+1)
+        
+    if to_WeChat:
+        for i in range(file_number):
+            drag_to_WeChat(i+1)
 
 def insert_Analysis_file(file_number):    
     locate.click_Blogger_tab()
@@ -127,14 +194,6 @@ def insert_files(file_number=1):
         
     for i in range(file_number):
         insert_original_file(i+1)
-
-def name_new_files(file_number=1, to_WeChat=False):
-    for i in range(file_number):
-        name_new_file(i+1)
-        
-    if to_WeChat:
-        for i in range(file_number):
-            drag_to_WeChat(i+1)
 
 quake_forecast_title = {
     'Chinese': '地震預報：',
