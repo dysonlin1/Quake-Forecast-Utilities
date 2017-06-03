@@ -105,7 +105,9 @@ def name_file(file_number, new_file_name):
 # Name new file
 def name_new_file(file_number):
     old_file_name = locate.get_file_name(file_number, 'old')
+    time.sleep(1)
     new_file_name = get_new_file_name(old_file_name)
+    time.sleep(1)
     name_file(file_number, new_file_name)
 
 def name_new_files(file_number=1, to_WeChat=False):
