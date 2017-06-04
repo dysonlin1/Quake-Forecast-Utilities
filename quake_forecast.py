@@ -94,10 +94,9 @@ def name_file(file_number, new_file_name):
   
     pyautogui.rightClick()
     time.sleep(1)
-    pyautogui.press('down')
-    pyautogui.press('down')
-    pyautogui.press('down')
-    pyautogui.press('down')
+    for i in range(4):
+        pyautogui.press('down')
+        time.sleep(0.5)
     pyautogui.press('p') # paste new file name from clip board
     time.sleep(1)
     pyautogui.press('enter')
@@ -164,9 +163,9 @@ def insert_Analysis_file(file_number):
  
     pyautogui.rightClick()
     time.sleep(1)
-    pyautogui.press('down')
-    pyautogui.press('down')
-    pyautogui.press('down')
+    for i in range(3):
+        pyautogui.press('down')
+        time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(1)
 
@@ -212,9 +211,9 @@ def insert_original_file(file_number):
  
     pyautogui.rightClick()
     time.sleep(1)
-    pyautogui.press('down')
-    pyautogui.press('down')
-    pyautogui.press('down')
+    for i in range(3):
+        pyautogui.press('down')
+        time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(1)
 
