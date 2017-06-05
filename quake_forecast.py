@@ -6,7 +6,7 @@ import pyautogui
 import time
 import pyperclip
 from WeChat import drag_to_WeChat
-pyautogui.PAUSE = 0.1
+pyautogui.PAUSE = 0.5
 pyautogui.FAILSAFE = True
 
 def duplicate_file():
