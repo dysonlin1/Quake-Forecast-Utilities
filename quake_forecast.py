@@ -9,11 +9,23 @@ import pyperclip
 pyautogui.PAUSE = 0.5
 pyautogui.FAILSAFE = True
 
+# 發生了： 発生了： Happened:
+# '日本、俄羅斯或阿拉斯加，',
+# '日本、ロシアまたはアラスカ、',
+# 'Japan, Russia or Alaska, '},
+# '南太平洋或南美洲，',
+# '南太平洋または南米',
+# 'South Pacific or South America, '},
+
 def locate_and_click(png_file_name):
     try:
         # locate
         (x, y) = pyautogui.locateCenterOnScreen(png_file_name)
-    
+        
+        # move mouse
+        pyautogui.moveTo(x, y)
+        time.sleep(1)
+        
         # click
         pyautogui.click(x, y)
         time.sleep(0.5)
