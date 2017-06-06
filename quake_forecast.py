@@ -1,13 +1,115 @@
 # -*- coding: utf-8 -*-
 # quake_forecast.py
 
-import locate
+#import locate
 import pyautogui
 import time
 import pyperclip
-from WeChat import drag_to_WeChat
+#from WeChat import drag_to_WeChat
 pyautogui.PAUSE = 0.5
 pyautogui.FAILSAFE = True
+
+def locate_and_click(png_file_name):
+    try:
+        # locate
+        (x, y) = pyautogui.locateCenterOnScreen(png_file_name)
+    
+        # click
+        pyautogui.click(x, y)
+        time.sleep(0.5)
+    except:
+        print('Cannot locate:' + png_file_name)
+    
+def click_Blogger_tab():
+    locate_and_click('BloggerTab.png')
+    
+def click_Blog_Title():
+    #locate_and_click('BlogTitle.png')
+    pyautogui.moveTo(1147, 216)
+    time.sleep(0.1)
+    pyautogui.click() # click
+
+def click_Publish_button():
+    locate_and_click('PublishButton.png')
+    #x, y = pyautogui.locateCenterOnScreen('PublishButton.png') # locate
+    #pyautogui.moveTo(x, y)
+    #time.sleep(0.1)
+    #pyautogui.click() # click
+
+def click_Facebook_Publish_button():
+    locate_and_click('FacebookPublishButton.png')    
+    
+def click_Super_Big_button():
+    locate_and_click('SuperBigButton.png')
+    
+def click_Add_Image_Title_button():
+    locate_and_click('AddImageTitleButton.png')
+    
+def click_Add_Image_Title_field():
+    locate_and_click('AddNewImageTitleField.png')
+    
+def click_Font_Size():
+    locate_and_click('FontSize.png')
+    
+def scroll_down():
+    pyautogui.moveTo(1100, 600)
+    time.sleep(1)
+    pyautogui.scroll(-10000) # scroll down
+    time.sleep(1)
+    
+def click_Edit_area():    
+    # click bottom of Edit area
+    pyautogui.moveTo(1100, 1000)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+def click_image(y):
+    scroll_down()
+
+    x = 700
+           
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+def get_file_location(file_number, file_type='original'):
+    if ((file_type is 'analysis') | (file_type is 'old')):
+        x = 160
+    else: # 'original' or 'new'
+        x = 53
+    
+    y = 80 + (file_number - 1) * 148
+    return (x, y)
+
+def get_file_name_location(file_number, file_type='original'):
+    if ((file_type is 'analysis') | (file_type is 'old')):
+        x = 160
+    else: # 'original' or 'new'
+        x = 53
+    
+    y = 114 + (file_number - 1) * 148
+    return (x, y)
+
+def get_file_name(file_number, file_type='original'):
+    (file_x, file_y) = get_file_location(file_number, file_type)
+    pyautogui.moveTo(file_x, file_y)
+    pyautogui.click()
+
+    (file_name_x, file_name_y) = get_file_name_location(file_number, file_type)
+    pyautogui.moveTo(file_name_x, file_name_y)
+    pyautogui.click()
+    time.sleep(0.5)
+    pyautogui.rightClick()
+    for i in range(3):
+        pyautogui.press('down')
+        time.sleep(0.5)
+    pyautogui.press('c') # copy file name to clipboard
+    time.sleep(0.5)
+    
+    file_name = pyperclip.paste() # read file name from clipboard
+    return file_name
 
 def duplicate_file():
     pyautogui.rightClick()
@@ -50,7 +152,7 @@ def open_file():
     
 # Duplicate file, ramane it and open it with Painter
 def analyze_file(file_number):
-    (x, y) = locate.get_file_location(file_number, 'original')
+    (x, y) = get_file_location(file_number, 'original')
     pyautogui.moveTo(x, y)
     duplicate_file()
     rename_file()
@@ -80,13 +182,13 @@ def get_new_file_name(old_file_name):
     return new_file_name
 
 def name_file(file_number, new_file_name):
-    (x, y) = locate.get_file_location(file_number, 'new')
+    (x, y) = get_file_location(file_number, 'new')
     pyperclip.copy(new_file_name) # copy new file name to clipboard
     pyautogui.moveTo(x, y)
     pyautogui.click()
     time.sleep(1)
     
-    (x, y) = locate.get_file_name_location(file_number, 'new')
+    (x, y) = get_file_name_location(file_number, 'new')
     #pyautogui.moveRel(0, 42)
     pyautogui.moveTo(x, y)
     pyautogui.click()
@@ -100,10 +202,46 @@ def name_file(file_number, new_file_name):
     pyautogui.press('p') # paste new file name from clip board
     time.sleep(1)
     pyautogui.press('enter')
- 
-# Name new file
+
+def click_WeChat_icon():
+    pyautogui.moveTo(1500, 1079)
+    time.sleep(1)
+    pyautogui.moveTo(564, 1058)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+
+def click_WeChat_Edit_area():
+    pyautogui.moveTo(1090, 935)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+# Paste a file's name to WeChat and then drag it to WeChat
+def drag_to_WeChat(file_number, file_type='original'):
+    # copy file name to clipboard
+    get_file_name(file_number, file_type)
+    
+    click_WeChat_icon()
+    click_WeChat_Edit_area()
+
+    # paste file name from clipboard
+    pyautogui.hotkey('ctrl', 'v')
+
+    (x, y) = get_file_location(file_number, file_type)
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+    pyautogui.dragTo(1090, 935, 2)
+    pyautogui.click()
+    time.sleep(1)
+
+    pyautogui.press('enter')    
+    
 def name_new_file(file_number):
-    old_file_name = locate.get_file_name(file_number, 'old')
+    old_file_name = get_file_name(file_number, 'old')
     time.sleep(1)
     new_file_name = get_new_file_name(old_file_name)
     time.sleep(1)
@@ -118,16 +256,16 @@ def name_new_files(file_number=1, to_WeChat=False):
             drag_to_WeChat(i+1)
 
 def insert_Analysis_file(file_number):    
-    locate.click_Blogger_tab()
-    locate.click_Edit_area()
+    click_Blogger_tab()
+    click_Edit_area()
     
     if (file_number is 1):
         pyautogui.press('enter')
         
     pyautogui.press('up')
     
-    analysis_file_name = locate.get_file_name(file_number, 'analysis')    
-    (x, y) = locate.get_file_location(file_number, 'analysis')
+    analysis_file_name = get_file_name(file_number, 'analysis')    
+    (x, y) = get_file_location(file_number, 'analysis')
     
     pyautogui.moveTo(x, y)
     pyautogui.click()
@@ -141,24 +279,24 @@ def insert_Analysis_file(file_number):
     pyautogui.dragTo(x, y, 2)
     time.sleep(5)
 
-    locate.scroll_down()
+    scroll_down()
 
-    locate.click_Edit_area()
+    click_Edit_area()
     
     if (file_number is 1):
-        locate.click_image(500)
+        click_image(500)
     else:
-        locate.click_image(957)
+        click_image(957)
         
-    locate.scroll_down()
+    scroll_down()
     
-    locate.click_Super_Big_button()
-    locate.scroll_down()
+    click_Super_Big_button()
+    scroll_down()
     
-    locate.click_Add_Image_Title_button()
-    locate.scroll_down()
+    click_Add_Image_Title_button()
+    scroll_down()
     
-    locate.click_Add_Image_Title_field()
+    click_Add_Image_Title_field()
     pyautogui.tripleClick()
  
     pyautogui.rightClick()
@@ -169,24 +307,24 @@ def insert_Analysis_file(file_number):
     pyautogui.press('enter')
     time.sleep(1)
 
-    locate.click_Font_Size()
+    click_Font_Size()
 
     pyautogui.moveRel(0, 93)
     time.sleep(1)
     pyautogui.click()
     time.sleep(1)
 
-    locate.scroll_down()
-    locate.click_Edit_area()
+    scroll_down()
+    click_Edit_area()
     pyautogui.press('up')
 
 def insert_original_file(file_number):
-    locate.click_Blogger_tab()
-    locate.click_Edit_area()
+    click_Blogger_tab()
+    click_Edit_area()
     pyautogui.press('up')
     
-    original_file_name = locate.get_file_name(file_number, 'original')
-    (x, y) = locate.get_file_location(file_number, 'original')
+    original_file_name = get_file_name(file_number, 'original')
+    (x, y) = get_file_location(file_number, 'original')
     
     pyautogui.moveTo(x, y)
     pyautogui.click()
@@ -194,19 +332,19 @@ def insert_original_file(file_number):
     
     pyautogui.dragTo(700, 957, 2)
     time.sleep(5)
-    locate.scroll_down()
+    scroll_down()
     
-    locate.click_Edit_area()
-    locate.click_image(957)
-    locate.scroll_down()   
+    click_Edit_area()
+    click_image(957)
+    scroll_down()   
     
-    locate.click_Super_Big_button()
-    locate.scroll_down()
+    click_Super_Big_button()
+    scroll_down()
     
-    locate.click_Add_Image_Title_button()
-    locate.scroll_down()
+    click_Add_Image_Title_button()
+    scroll_down()
     
-    locate.click_Add_Image_Title_field()
+    click_Add_Image_Title_field()
     pyautogui.tripleClick()
  
     pyautogui.rightClick()
@@ -217,15 +355,15 @@ def insert_original_file(file_number):
     pyautogui.press('enter')
     time.sleep(1)
 
-    locate.click_Font_Size()
+    click_Font_Size()
 
     pyautogui.moveRel(0, 93)
     time.sleep(1)
     pyautogui.click()
     time.sleep(1)
 
-    locate.scroll_down()
-    locate.click_Edit_area()
+    scroll_down()
+    click_Edit_area()
     pyautogui.press('up')
 
 def insert_files(file_number=1):
@@ -235,6 +373,440 @@ def insert_files(file_number=1):
     for i in range(file_number):
         insert_original_file(i+1)
 
+def set_blog_title():
+    click_Blogger_tab()
+    click_Blog_Title()
+    
+    # paste from clipboard
+    pyautogui.rightClick()
+    pyautogui.press('down')
+    time.sleep(0.5)
+    pyautogui.press('down')
+    time.sleep(0.5)
+    pyautogui.press('p')
+    time.sleep(0.5)
+    pyautogui.press('enter')
+
+def get_Quake_Forecast_title(languages): 
+    blog_title = {}
+    for language in languages:
+        blog_title[language] = station_name[language]
+        blog_title[language] += quake_forecast_title[language]
+        quake_number = 0
+        for quake in quake_forecast:
+            quake_number += 1
+            blog_title[language] += '('
+            blog_title[language] += str(quake_number)
+            blog_title[language] += ')'
+            blog_title[language] += quake['color'][language]
+            blog_title[language] += Within[language]
+            blog_title[language] += str(quake['time'])
+            blog_title[language] += Days[language]
+            blog_title[language] += quake['location'][language]
+            blog_title[language] += quake['magnitude']
+            blog_title[language] += ' '
+    
+    blog_title_str = (time_stamp + ' ')
+    
+    for language in languages:
+        blog_title_str += (blog_title[language])
+    
+    blog_title_str = blog_title_str.strip() # remove extra white space
+    #print(blog_title_str)
+    pyperclip.copy(blog_title_str) # copy to clipboard
+    
+    return (blog_title, blog_title_str)
+
+def get_Quake_Forecast_text(languages):
+    blog_text = {}
+    for language in languages:
+        blog_text[language] = station_name[language]
+        blog_text[language] += quake_forecast_title[language] + '\n'
+        quake_number = 0
+        for quake in quake_forecast:
+            quake_number += 1
+            blog_text[language] += '('
+            blog_text[language] += str(quake_number)
+            blog_text[language] += ')'
+            blog_text[language] += quake['color'][language]
+            blog_text[language] += Within[language]
+            blog_text[language] += str(quake['time'])
+            blog_text[language] += Days[language]
+            blog_text[language] += quake['location'][language]
+            blog_text[language] += quake['magnitude']
+            blog_text[language] += '\n'
+        blog_text[language] += '\n'    
+        blog_text[language] += author[language]
+        blog_text[language] += '\n'
+        blog_text[language] += time_stamp
+        blog_text[language] += '\n\n\n'
+
+    blog_text_str = ''        
+    for language in languages:
+        blog_text_str += blog_text[language]
+    blog_text_str = blog_text_str.strip() # remove extra white space
+    #print(blog_text_str)
+    pyperclip.copy(blog_text_str) # copy to clipboard
+    
+def get_Quake_Signals_title(languages, signals): 
+    blog_title = {}
+    for language in languages:
+        blog_title[language] = station_name[language]
+        blog_title[language] += quake_signals_title[language]
+        blog_title[language] += Already_happened[language]
+        quake_number = 0
+        for quake in signals:
+            quake_number += 1
+            blog_title[language] += '('
+            blog_title[language] += str(quake_number)
+            blog_title[language] += ')'
+            blog_title[language] += quake['color'][language]
+            #blog_title[language] += Within[language]
+            blog_title[language] += str(quake['time'])
+            blog_title[language] += ' '
+            blog_title[language] += quake['location'][language]
+            blog_title[language] += ' '
+            blog_title[language] += quake['magnitude']
+            blog_title[language] += ' '
+    
+    blog_title_str = (time_stamp + ' ')
+    
+    for language in languages:
+        blog_title_str += (blog_title[language])
+    
+    blog_title_str = blog_title_str.strip() # remove extra white space
+    #print(blog_title_str)
+    pyperclip.copy(blog_title_str) # copy to clipboard
+    
+    return (blog_title, blog_title_str)
+
+def get_Quake_Signals_text(languages, signals):
+    blog_text = {}
+    for language in languages:
+        blog_text[language] = station_name[language]
+        blog_text[language] += quake_signals_title[language] + '\n'
+        blog_text[language] += Already_happened[language] + '\n'
+        quake_number = 0
+        for quake in signals:
+            quake_number += 1
+            blog_text[language] += '('
+            blog_text[language] += str(quake_number)
+            blog_text[language] += ')'
+            blog_text[language] += quake['color'][language]
+            #blog_text[language] += Within[language]
+            blog_text[language] += str(quake['time'])
+            blog_text[language] += ' '
+            #blog_text[language] += Days[language]
+            blog_text[language] += quake['location'][language]
+            blog_text[language] += ' '
+            blog_text[language] += quake['magnitude']
+            blog_text[language] += '\n'
+        blog_text[language] += '\n'    
+        blog_text[language] += author[language]
+        blog_text[language] += '\n'
+        blog_text[language] += time_stamp
+        blog_text[language] += '\n\n\n'
+
+    blog_text_str = ''        
+    for language in languages:
+        blog_text_str += blog_text[language]
+    blog_text_str = blog_text_str.strip() # remove extra white space
+    #print(blog_text_str)
+    pyperclip.copy(blog_text_str) # copy to clipboard
+    
+def get_blog_address():
+    click_Blogger_tab()
+
+    pyautogui.moveTo(710, 61)
+    pyautogui.tripleClick()
+    pyautogui.rightClick()
+    time.sleep(0.5)
+    pyautogui.press('down')
+    time.sleep(0.5)
+    pyautogui.press('down')
+    time.sleep(0.5)
+    pyautogui.press('c') # copy blog address to clipboard
+    time.sleep(0.5)
+    blog_address = pyperclip.paste() # read blog address from clipboard
+    time.sleep(0.5)
+    #print('Blog address: ' + blog_address)
+    #print()
+    return blog_address
+
+def set_blog_text():
+    click_Blogger_tab()
+    scroll_down()
+    click_Edit_area()
+    pyautogui.press('backspace')
+    time.sleep(0.5)
+
+    pyautogui.rightClick()
+    pyautogui.press('down')
+    time.sleep(0.5)
+    pyautogui.press('down')
+    time.sleep(0.5)
+    pyautogui.press('p') # paste from clipboard
+    time.sleep(0.5)
+    
+def click_Facebook_tab(tab_number):
+    global Facebook_tab_1_x
+    global Facebook_tab_2_x
+    global Facebook_tab_3_x
+    
+    if tab_number is 1:
+        (x, y) = (520, 30)
+    elif tab_number is 2:
+        (x, y) = (630, 30)
+    elif tab_number is 3:
+        (x, y) = (733, 30)
+    else:
+        print('Wrong tab number:', str(tab_number))
+    
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click() # click
+    
+def click_WeChat_icon():
+    pyautogui.moveTo(1000, 1079)
+    time.sleep(1)
+    pyautogui.moveTo(564, 1058)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+def click_WeChat_Edit_area():
+    pyautogui.moveTo(1090, 935)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+def post_to_WeChat():
+    click_WeChat_icon()
+    click_WeChat_Edit_area()
+    
+    # paste Quake Forecast from clipboard
+    pyautogui.hotkey('ctrl', 'v')
+    
+    # darg analysis file 1 to WeChat
+    x = 160
+    y = 70
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+    pyautogui.dragTo(1090, 935, 2)
+    pyautogui.click()
+    time.sleep(1)
+
+    pyautogui.press('enter')
+    time.sleep(3)
+    
+def click_Twitter_tab():
+    (x, y) = (404, 30)
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click() # click
+    
+def click_Twit_button():
+    (x, y) = (1775, 122)
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click() # click
+
+def click_Twitter_Edit_area():
+    (x, y) = (1068, 466)
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click() # click
+
+def post_to_Twitter():
+    click_Twitter_tab()
+    click_Twit_button()
+
+    # paste Quake Forecast from clipboard
+    pyautogui.hotkey('ctrl', 'v')
+
+    # darg analysis file 1 to Twitter
+    x = 160
+    y = 70
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.click()
+    time.sleep(1)
+    
+    pyautogui.dragTo(1068, 466, 2)
+    pyautogui.click()
+    time.sleep(1)
+
+    for i in range(0, 6):
+        pyautogui.press('tab')
+    pyautogui.press('enter')
+    
+    time.sleep(3)
+    
+    #pyautogui.scroll(-100) # scroll down
+
+def publish_blog():
+    pyautogui.moveTo(1717, 237)
+    time.sleep(2)
+    pyautogui.click()
+    
+def view_blog():
+    click_Blogger_tab()
+    #time.sleep(7)
+    time.sleep(1)
+    pyautogui.moveTo(833, 504)
+    #time.sleep(3)
+    time.sleep(10)
+    pyautogui.click()
+    time.sleep(1)
+
+def close_Blogger_article_list():
+    click_Blogger_tab()
+    time.sleep(1)
+    
+    pyautogui.click()
+    time.sleep(1)
+    
+    pyautogui.rightClick()
+    time.sleep(1)
+
+    for i in range(0, 6):
+        pyautogui.press('down')
+    
+    time.sleep(1)
+    pyautogui.press('enter')
+
+    pyautogui.moveRel(100, 0)
+    #pyautogui.moveRel(30, 0)
+    time.sleep(2)
+    #pyautogui.click()
+    #time.sleep(1)
+    
+def post_Quake_Forecast(blog_address, blog_title_str):
+    # Post to Facebook, WeChat and Twitter
+
+    #Twitter_languages = ['Chinese', 'Japanese']
+    Twitter_languages = ['Japanese']
+    (blog_title_Twitter, blog_title_str_Twitter) = get_Quake_Forecast_title(Twitter_languages)
+
+    post_text_Twitter = blog_title_str_Twitter + '\n' + blog_address
+    print(post_text_Twitter)
+
+    pyperclip.copy(post_text_Twitter) # copy to clipboard
+    post_to_Twitter()
+    
+    
+    post_text = blog_title_str + '\n' + blog_address
+    print(post_text)
+    
+    pyperclip.copy(post_text) # copy to clipboard
+    post_to_WeChat()
+
+    pyperclip.copy(post_text) # copy to clipboard
+    post_to_Facebook(1)
+
+    pyperclip.copy(post_text) # copy to clipboard
+    post_to_Facebook(2)
+
+    pyperclip.copy(post_text) # copy to clipboard
+    post_to_Facebook(3)
+
+def publish_Quake_Forecast(languages):
+    (blog_title, blog_title_str) = get_Quake_Forecast_title(languages)
+    set_blog_title()
+    get_Quake_Forecast_text(languages)
+    set_blog_text()
+    publish_blog()
+    time.sleep(15)
+    return (blog_title, blog_title_str)    
+
+def post_to_Facebook(tab_number):
+    click_Facebook_tab(tab_number)
+
+    if tab_number is 1:
+        (x, y) = (1244, 945)
+    elif tab_number is 2:
+        (x, y) = (1002, 832)
+    elif tab_number is 3:
+        (x, y) = (832, 950)
+        #(x, y) = (977, 972)
+    else:
+        print('Wrong tab number:', str(tab_number))
+        
+    pyautogui.moveTo(x, y)
+    time.sleep(1)
+    pyautogui.scroll(10000) # scroll up
+    time.sleep(1)
+
+    pyautogui.moveTo(x, y)
+    pyautogui.click()
+    time.sleep(1)
+
+    # paste Quake Forecast from clipboard
+    pyautogui.hotkey('ctrl', 'v')
+    time.sleep(4)
+    
+    #click_Publish_button() # Publish
+    if tab_number is 1:
+        pyautogui.moveTo(x+100, y)
+        time.sleep(1)
+        pyautogui.scroll(-700) # scroll down
+        time.sleep(2)
+        
+        for i in range(0, 10):
+            pyautogui.press('tab')
+            time.sleep(1)
+        pyautogui.press('enter')
+        time.sleep(1)
+        #pyautogui.scroll(-100) # scroll down
+    elif tab_number is 2:
+        pyautogui.moveTo(x+100, y)
+        time.sleep(1)
+        pyautogui.scroll(-700) # scroll down
+        time.sleep(2)
+        
+        for i in range(0, 14):
+            pyautogui.press('tab')
+            time.sleep(1)
+        pyautogui.press('enter')
+        time.sleep(1)
+        #pyautogui.scroll(-100) # scroll down
+    elif tab_number is 3:
+        # darg analysis file 1 to Facebook
+        #x = 160
+        #y = 70
+        #pyautogui.moveTo(x, y)
+        #time.sleep(1)
+        #pyautogui.click()
+        #time.sleep(1)
+    
+        #pyautogui.dragTo(977, 972, 2)
+        #time.sleep(1)
+        
+        #pyautogui.scroll(-1200) # scroll down
+        #time.sleep(2)
+        #click_Facebook_Publish_button()
+        
+        #pyautogui.moveTo(1318, 612)
+        #time.sleep(2)
+        #pyautogui.click()
+        #time.sleep(1)
+        
+        for i in range(0, 14):
+        #for i in range(0, 6):
+            pyautogui.press('tab')
+            time.sleep(1)
+        pyautogui.press('enter')
+        time.sleep(1)
+        pyautogui.scroll(-700) # scroll down
+    else:
+        print('Wrong tab number:', str(tab_number))
+    
+    time.sleep(4)
+    #time.sleep(5)
+    
 quake_forecast_title = {
     'Chinese': '地震預報：',
     'Japanese': '地震予報：',
@@ -395,3 +967,8 @@ station['加拿大列治文站'] = {
     'Chinese': '加拿大列治文站', 
     'Japanese': 'カナダ リッチモンド局', 
     'English': 'Richmond BC Canada Station '}
+
+station['日本輻射值'] = {
+    'Chinese': '日本輻射值', 
+    'Japanese': '日本の放射線値', 
+    'English': 'Japan Radiation Value '}
