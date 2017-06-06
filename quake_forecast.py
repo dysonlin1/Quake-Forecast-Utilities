@@ -399,7 +399,7 @@ def set_blog_title():
     time.sleep(0.5)
     pyautogui.press('enter')
 
-def get_Quake_Forecast_title(languages, quake_forecast, time_stamp): 
+def get_Quake_Forecast_title(quake_forecast, station_name, languages, time_stamp):
     blog_title = {}
     for language in languages:
         blog_title[language] = station_name[language]
@@ -429,7 +429,7 @@ def get_Quake_Forecast_title(languages, quake_forecast, time_stamp):
     
     return (blog_title, blog_title_str)
 
-def get_Quake_Forecast_text(languages, quake_forecast, time_stamp):
+def get_Quake_Forecast_text(quake_forecast, station_name, languages, time_stamp):
     blog_text = {}
     for language in languages:
         blog_text[language] = station_name[language]
@@ -460,7 +460,7 @@ def get_Quake_Forecast_text(languages, quake_forecast, time_stamp):
     #print(blog_text_str)
     pyperclip.copy(blog_text_str) # copy to clipboard
     
-def get_Quake_Signals_title(languages, signals): 
+def get_Quake_Signals_title(signals, station_name, languages, time_stamp): 
     blog_title = {}
     for language in languages:
         blog_title[language] = station_name[language]
@@ -492,7 +492,7 @@ def get_Quake_Signals_title(languages, signals):
     
     return (blog_title, blog_title_str)
 
-def get_Quake_Signals_text(languages, signals):
+def get_Quake_Signals_text(signals, station_name, languages, time_stamp):
     blog_text = {}
     for language in languages:
         blog_text[language] = station_name[language]
@@ -690,29 +690,22 @@ def close_Blogger_article_list():
     time.sleep(1)
     pyautogui.press('enter')
 
-    pyautogui.moveRel(100, 0)
-    #pyautogui.moveRel(30, 0)
+    pyautogui.moveRel(80, 0)
     time.sleep(2)
-    #pyautogui.click()
-    #time.sleep(1)
     
-def post_Quake_Forecast(blog_address, blog_title_str):
+def post_Quake_Forecast(quake_forecast, station_name, time_stamp,
+            blog_address, blog_title_str):
     # Post to Facebook, WeChat and Twitter
 
-    #Twitter_languages = ['Chinese', 'Japanese']
     Twitter_languages = ['Japanese']
-    (blog_title_Twitter, blog_title_str_Twitter) = get_Quake_Forecast_title(Twitter_languages)
-
+    (blog_title_Twitter, blog_title_str_Twitter) = get_Quake_Forecast_title(quake_forecast,
+                                                station_name, Twitter_languages, time_stamp)
     post_text_Twitter = blog_title_str_Twitter + '\n' + blog_address
-    print(post_text_Twitter)
-
     pyperclip.copy(post_text_Twitter) # copy to clipboard
     post_to_Twitter()
     
     
-    post_text = blog_title_str + '\n' + blog_address
-    print(post_text)
-    
+    post_text = blog_title_str + '\n' + blog_address    
     pyperclip.copy(post_text) # copy to clipboard
     post_to_WeChat()
 
@@ -725,11 +718,11 @@ def post_Quake_Forecast(blog_address, blog_title_str):
     pyperclip.copy(post_text) # copy to clipboard
     post_to_Facebook(3)
 
-def publish_Quake_Forecast(languages, quake_forecast, time_stamp):
-    (blog_title, blog_title_str) = get_Quake_Forecast_title(languages, 
-                                                  quake_forecast, time_stamp)
+def publish_Quake_Forecast(quake_forecast, station_name, languages, time_stamp):
+    (blog_title, blog_title_str) = get_Quake_Forecast_title(quake_forecast, 
+                                          station_name, languages, time_stamp)
     set_blog_title()
-    get_Quake_Forecast_text(languages, quake_forecast, time_stamp)
+    get_Quake_Forecast_text(quake_forecast, station_name, languages, time_stamp)
     set_blog_text()
     publish_blog()
     time.sleep(15)
