@@ -399,7 +399,7 @@ def set_blog_title():
     time.sleep(0.5)
     pyautogui.press('enter')
 
-def get_Quake_Forecast_title(languages): 
+def get_Quake_Forecast_title(languages, quake_forecast, time_stamp): 
     blog_title = {}
     for language in languages:
         blog_title[language] = station_name[language]
@@ -429,7 +429,7 @@ def get_Quake_Forecast_title(languages):
     
     return (blog_title, blog_title_str)
 
-def get_Quake_Forecast_text(languages):
+def get_Quake_Forecast_text(languages, quake_forecast, time_stamp):
     blog_text = {}
     for language in languages:
         blog_text[language] = station_name[language]
@@ -725,10 +725,11 @@ def post_Quake_Forecast(blog_address, blog_title_str):
     pyperclip.copy(post_text) # copy to clipboard
     post_to_Facebook(3)
 
-def publish_Quake_Forecast(languages):
-    (blog_title, blog_title_str) = get_Quake_Forecast_title(languages)
+def publish_Quake_Forecast(languages, quake_forecast, time_stamp):
+    (blog_title, blog_title_str) = get_Quake_Forecast_title(languages, 
+                                                  quake_forecast, time_stamp)
     set_blog_title()
-    get_Quake_Forecast_text(languages)
+    get_Quake_Forecast_text(languages, quake_forecast, time_stamp)
     set_blog_text()
     publish_blog()
     time.sleep(15)
