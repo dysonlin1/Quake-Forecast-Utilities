@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 # quake_forecast.py
 
-#import locate
 import pyautogui
 import time
 import pyperclip
-#from WeChat import drag_to_WeChat
 pyautogui.PAUSE = 0.5
 pyautogui.FAILSAFE = True
 
@@ -973,6 +971,11 @@ station['加拿大列治文站'] = {
     'Chinese': '加拿大列治文站', 
     'Japanese': 'カナダ リッチモンド局', 
     'English': 'Richmond BC Canada Station '}
+
+station['嘉義站'] = {
+    'Chinese': '嘉義站', 
+    'Japanese': '嘉義局', 
+    'English': 'Chiayi Station '}
 
 station['日本輻射值'] = {
     'Chinese': '日本輻射值', 
