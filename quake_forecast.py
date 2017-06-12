@@ -179,12 +179,16 @@ def get_time_stamp():
     time_stamp += ' UTC+8'
     return time_stamp
 
-def get_new_file_name(old_file_name):   
-    old_date_stamp = old_file_name[0:10]
-    # print('Old date stamp: ' + old_date_stamp)
-  
+def get_new_file_name(old_file_name):
+    splt_old_file_name = old_file_name.split()
+    old_date_stamp = splt_old_file_name[0]
+    old_date = old_date_stamp[0:10]
+   
     new_date_stamp = get_date_stamp()
-    # print('New date stamp: ' + new_date_stamp)
+    new_date = new_date_stamp[0:10]
+    
+    if (new_date == old_date):
+        new_date_stamp = new_date + '-2'
   
     new_file_name = old_file_name.replace(old_date_stamp, new_date_stamp)
     #print('New file name: ' + new_file_name)
