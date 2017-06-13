@@ -4,7 +4,7 @@
 import pyautogui
 import time
 import pyperclip
-pyautogui.PAUSE = 0.4
+pyautogui.PAUSE = 0.3
 pyautogui.FAILSAFE = True
 
 # 發生了： 発生了： Happened:
