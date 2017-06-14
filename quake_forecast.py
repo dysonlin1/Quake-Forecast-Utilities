@@ -179,12 +179,16 @@ def get_time_stamp():
     time_stamp += ' UTC+8'
     return time_stamp
 
-def get_new_file_name(old_file_name):
+def get_new_file_name(old_file_name, date_stamp):
     splt_old_file_name = old_file_name.split()
     old_date_stamp = splt_old_file_name[0]
     old_date = old_date_stamp[0:10]
-   
-    new_date_stamp = get_date_stamp()
+    
+    if date_stamp is None:
+        new_date_stamp = get_date_stamp()
+    else:
+        new_date_stamp = date_stamp
+    
     new_date = new_date_stamp[0:10]
     
     if (new_date == old_date):
@@ -254,16 +258,16 @@ def drag_to_WeChat(file_number, file_type='original'):
 
     pyautogui.press('enter')    
     
-def name_new_file(file_number):
+def name_new_file(file_number, date_stamp):
     old_file_name = get_file_name(file_number, 'old')
     time.sleep(1)
-    new_file_name = get_new_file_name(old_file_name)
+    new_file_name = get_new_file_name(old_file_name, date_stamp)
     time.sleep(1)
     name_file(file_number, new_file_name)
 
-def name_new_files(file_number=1, to_WeChat=False):
+def name_new_files(file_number=1, to_WeChat=False, date_stamp=None):
     for i in range(file_number):
-        name_new_file(i+1)
+        name_new_file(i+1, date_stamp)
         
     if to_WeChat:
         for i in range(file_number):
