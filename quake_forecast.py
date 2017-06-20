@@ -930,11 +930,6 @@ station['台南新生站'] = {
     'Japanese': '台南新生局', 
     'English': 'Tainan Xinsheng Station '}
 
-station['高雄站'] = {
-    'Chinese': '高雄站', 
-    'Japanese': '高雄局', 
-    'English': 'Kaohsiung Station '}
-
 station['台中潭子站'] = {
     'Chinese': '台中潭子站', 
     'Japanese': '台中潭子局', 
@@ -989,3 +984,13 @@ station['日本輻射值'] = {
     'Chinese': '日本輻射值', 
     'Japanese': '日本の放射線値', 
     'English': 'Japan Radiation Value '}
+
+station['高雄前鎮站'] = {
+    'Chinese': '高雄前鎮站', 
+    'Japanese': '高雄前鎮局', 
+    'English': 'Kaohsiung Cianjhen Station '}
+
+station['高雄小港站'] = {
+    'Chinese': '高雄小港站', 
+    'Japanese': '高雄小港局', 
+    'English': 'Kaohsiung Xiaogang Station '}
