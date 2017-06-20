@@ -673,7 +673,7 @@ def publish_blog():
 def view_blog():
     click_Blogger_tab()
     #time.sleep(7)
-    time.sleep(1)
+    time.sleep(5)
     pyautogui.moveTo(833, 504)
     #time.sleep(3)
     time.sleep(10)
