@@ -667,18 +667,19 @@ def post_to_Twitter():
 
 def publish_blog():
     pyautogui.moveTo(1717, 237)
-    time.sleep(2)
+    time.sleep(5)
     pyautogui.click()
+    time.sleep(5)
     
 def view_blog():
     click_Blogger_tab()
     #time.sleep(7)
-    time.sleep(5)
+    time.sleep(10)
     pyautogui.moveTo(833, 504)
     #time.sleep(3)
     time.sleep(10)
     pyautogui.click()
-    time.sleep(1)
+    time.sleep(10)
 
 def close_Blogger_article_list():
     click_Blogger_tab()
