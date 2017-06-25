@@ -627,7 +627,7 @@ def click_Twitter_tab():
     pyautogui.click() # click
     
 def click_Twit_button():
-    (x, y) = (1775, 122)
+    (x, y) = (1808, 122)
     pyautogui.moveTo(x, y)
     time.sleep(1)
     pyautogui.click() # click
