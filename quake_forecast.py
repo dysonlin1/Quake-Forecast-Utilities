@@ -741,7 +741,7 @@ def post_to_Facebook(tab_number):
     if tab_number is 1:
         (x, y) = (1244, 945)
     elif tab_number is 2:
-        (x, y) = (695, 863)
+        (x, y) = (999, 828)
     elif tab_number is 3:
         (x, y) = (832, 950)
         #(x, y) = (977, 972)
@@ -754,6 +754,7 @@ def post_to_Facebook(tab_number):
     time.sleep(1)
 
     pyautogui.moveTo(x, y)
+    time.sleep(1)
     pyautogui.click()
     time.sleep(1)
 
@@ -780,33 +781,13 @@ def post_to_Facebook(tab_number):
         pyautogui.scroll(-700) # scroll down
         time.sleep(2)
         
-        for i in range(0, 14):
+        for i in range(0, 10):
             pyautogui.press('tab')
             time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
         #pyautogui.scroll(-100) # scroll down
     elif tab_number is 3:
-        # darg analysis file 1 to Facebook
-        #x = 160
-        #y = 70
-        #pyautogui.moveTo(x, y)
-        #time.sleep(1)
-        #pyautogui.click()
-        #time.sleep(1)
-    
-        #pyautogui.dragTo(977, 972, 2)
-        #time.sleep(1)
-        
-        #pyautogui.scroll(-1200) # scroll down
-        #time.sleep(2)
-        #click_Facebook_Publish_button()
-        
-        #pyautogui.moveTo(1318, 612)
-        #time.sleep(2)
-        #pyautogui.click()
-        #time.sleep(1)
-        
         for i in range(0, 14):
         #for i in range(0, 6):
             pyautogui.press('tab')
