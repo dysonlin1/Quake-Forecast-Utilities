@@ -741,7 +741,7 @@ def post_to_Facebook(tab_number):
     if tab_number is 1:
         (x, y) = (1244, 945)
     elif tab_number is 2:
-        (x, y) = (975, 832)
+        (x, y) = (695, 863)
     elif tab_number is 3:
         (x, y) = (832, 950)
         #(x, y) = (977, 972)
