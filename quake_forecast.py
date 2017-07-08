@@ -976,3 +976,8 @@ station['高雄小港站'] = {
     'Chinese': '高雄小港站', 
     'Japanese': '高雄小港局', 
     'English': 'Kaohsiung Xiaogang Station '}
+
+station['智利聖地牙哥站'] = {
+    'Chinese': '智利聖地牙哥站', 
+    'Japanese': 'チリ サンディエゴ局', 
+    'English': 'Santiago, Chile Station '}
