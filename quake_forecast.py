@@ -673,11 +673,11 @@ def publish_blog():
     
 def view_blog():
     click_Blogger_tab()
-    #time.sleep(7)
     time.sleep(10)
     pyautogui.moveTo(833, 504)
-    #time.sleep(3)
-    time.sleep(10)
+    time.sleep(5)
+    pyautogui.moveTo(833, 506)
+    time.sleep(5)
     pyautogui.click()
     time.sleep(10)
 
@@ -781,7 +781,9 @@ def post_to_Facebook(tab_number):
         pyautogui.scroll(-700) # scroll down
         time.sleep(2)
         
-        for i in range(0, 10):
+        #for i in range(0, 10):
+        for i in range(0, 11):
+        #for i in range(0, 9):
             pyautogui.press('tab')
             time.sleep(1)
         pyautogui.press('enter')
@@ -789,7 +791,7 @@ def post_to_Facebook(tab_number):
         #pyautogui.scroll(-100) # scroll down
     elif tab_number is 3:
         for i in range(0, 14):
-        #for i in range(0, 6):
+        #for i in range(0, 13):
             pyautogui.press('tab')
             time.sleep(1)
         pyautogui.press('enter')
