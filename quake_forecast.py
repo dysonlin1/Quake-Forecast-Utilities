@@ -95,16 +95,18 @@ def get_file_name_location(file_number, file_type='original'):
 def get_file_name(file_number, file_type='original'):
     (file_x, file_y) = get_file_location(file_number, file_type)
     pyautogui.moveTo(file_x, file_y)
+    time.sleep(0.5)
     pyautogui.click()
 
     (file_name_x, file_name_y) = get_file_name_location(file_number, file_type)
     pyautogui.moveTo(file_name_x, file_name_y)
+    time.sleep(0.5)
     pyautogui.click()
     time.sleep(0.5)
     pyautogui.rightClick()
     for i in range(3):
         pyautogui.press('down')
-        time.sleep(0.5)
+        #time.sleep(0.5)
     pyautogui.press('c') # copy file name to clipboard
     time.sleep(0.5)
     
@@ -193,11 +195,13 @@ def name_file(file_number, new_file_name):
     (x, y) = get_file_location(file_number, 'new')
     pyperclip.copy(new_file_name) # copy new file name to clipboard
     pyautogui.moveTo(x, y)
+    time.sleep(0.5)
     pyautogui.click()
     time.sleep(1)
     
     (x, y) = get_file_name_location(file_number, 'new')
     pyautogui.moveTo(x, y)
+    time.sleep(0.5)
     pyautogui.click()
     time.sleep(1)
   
@@ -205,7 +209,7 @@ def name_file(file_number, new_file_name):
     time.sleep(1)
     for i in range(4):
         pyautogui.press('down')
-        time.sleep(0.5)
+        #time.sleep(0.5)
     pyautogui.press('p') # paste new file name from clip board
     time.sleep(1)
     pyautogui.press('enter')
@@ -275,6 +279,7 @@ def insert_Analysis_file(file_number):
     (x, y) = get_file_location(file_number, 'analysis')
     
     pyautogui.moveTo(x, y)
+    time.sleep(0.5)
     pyautogui.click()
     time.sleep(0.5)
     
@@ -310,7 +315,7 @@ def insert_Analysis_file(file_number):
     time.sleep(1)
     for i in range(3):
         pyautogui.press('down')
-        time.sleep(0.5)
+        #time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(1)
 
@@ -334,6 +339,7 @@ def insert_original_file(file_number):
     (x, y) = get_file_location(file_number, 'original')
     
     pyautogui.moveTo(x, y)
+    time.sleep(0.5)
     pyautogui.click()
     time.sleep(0.5)
     
@@ -358,7 +364,7 @@ def insert_original_file(file_number):
     time.sleep(1)
     for i in range(3):
         pyautogui.press('down')
-        time.sleep(0.5)
+        #time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(1)
 
@@ -387,11 +393,11 @@ def set_blog_title():
     # paste from clipboard
     pyautogui.rightClick()
     pyautogui.press('down')
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('down')
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('p')
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('enter')
 
 def get_Quake_Forecast_title(quake_forecast, station_name, languages, time_stamp):
@@ -527,15 +533,15 @@ def get_blog_address():
     pyautogui.moveTo(710, 61)
     pyautogui.tripleClick()
     pyautogui.rightClick()
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('down')
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('down')
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('c') # copy blog address to clipboard
-    time.sleep(0.5)
+    #time.sleep(0.5)
     blog_address = pyperclip.paste() # read blog address from clipboard
-    time.sleep(0.5)
+    #time.sleep(0.5)
     #print('Blog address: ' + blog_address)
     #print()
     return blog_address
@@ -545,15 +551,15 @@ def set_blog_text():
     scroll_down()
     click_Edit_area()
     pyautogui.press('backspace')
-    time.sleep(0.5)
+    #time.sleep(0.5)
 
     pyautogui.rightClick()
     pyautogui.press('down')
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('down')
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.press('p') # paste from clipboard
-    time.sleep(0.5)
+    #time.sleep(0.5)
     
 def click_Facebook_tab(tab_number):
     global Facebook_tab_1_x
