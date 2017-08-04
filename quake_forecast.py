@@ -1,7 +1,8 @@
 import pyautogui
 import time
 import pyperclip
-pyautogui.PAUSE = 0.5
+#pyautogui.PAUSE = 0.5
+pyautogui.PAUSE = 0.4
 pyautogui.FAILSAFE = True
 
 def locate_and_click(png_file_name):
@@ -196,7 +197,6 @@ def name_file(file_number, new_file_name):
     time.sleep(1)
     
     (x, y) = get_file_name_location(file_number, 'new')
-    #pyautogui.moveRel(0, 42)
     pyautogui.moveTo(x, y)
     pyautogui.click()
     time.sleep(1)
