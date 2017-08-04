@@ -1,19 +1,8 @@
-# -*- coding: utf-8 -*-
-# quake_forecast.py
-
 import pyautogui
 import time
 import pyperclip
 pyautogui.PAUSE = 0.5
 pyautogui.FAILSAFE = True
-
-# 發生了： 発生了： Happened:
-# '日本、俄羅斯或阿拉斯加，',
-# '日本、ロシアまたはアラスカ、',
-# 'Japan, Russia or Alaska, '},
-# '南太平洋或南美洲，',
-# '南太平洋または南米',
-# 'South Pacific or South America, '},
 
 def locate_and_click(png_file_name):
     try:
