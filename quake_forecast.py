@@ -662,9 +662,11 @@ def post_to_Twitter():
 
 def publish_blog():
     pyautogui.moveTo(1717, 237)
-    time.sleep(5)
+    #time.sleep(5)
+    time.sleep(1)
     pyautogui.click()
-    time.sleep(5)
+    #time.sleep(5)
+    time.sleep(1)
     
 def view_blog():
     click_Blogger_tab()
@@ -782,12 +784,11 @@ def post_to_Facebook(tab_number):
         time.sleep(1)
         #pyautogui.scroll(-100) # scroll down
     elif tab_number is 3:
-        for i in range(0, 23):
-            pyautogui.press('tab')
-            #time.sleep(1)
-        pyautogui.press('enter')
-        time.sleep(1)
-        pyautogui.scroll(-700) # scroll down
+        #for i in range(0, 23):
+        #    pyautogui.press('tab')
+        #pyautogui.press('enter')
+        #time.sleep(1)
+        #pyautogui.scroll(-700) # scroll down
     else:
         print('Wrong tab number:', str(tab_number))
     
