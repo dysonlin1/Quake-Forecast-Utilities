@@ -739,7 +739,6 @@ def post_to_Facebook(tab_number):
         (x, y) = (999, 828)
     elif tab_number is 3:
         (x, y) = (832, 950)
-        #(x, y) = (977, 972)
     else:
         print('Wrong tab number:', str(tab_number))
         
@@ -766,7 +765,7 @@ def post_to_Facebook(tab_number):
         
         for i in range(0, 10):
             pyautogui.press('tab')
-            time.sleep(1)
+            #time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
         #pyautogui.scroll(-100) # scroll down
@@ -776,27 +775,24 @@ def post_to_Facebook(tab_number):
         pyautogui.scroll(-700) # scroll down
         time.sleep(2)
         
-        for i in range(0, 13):
-        #for i in range(0, 11):
-        #for i in range(0, 9):
+        for i in range(0, 15):
             pyautogui.press('tab')
-            time.sleep(1)
+            #time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
         #pyautogui.scroll(-100) # scroll down
     elif tab_number is 3:
-        for i in range(0, 14):
-        #for i in range(0, 13):
+        for i in range(0, 23):
             pyautogui.press('tab')
-            time.sleep(1)
+            #time.sleep(1)
         pyautogui.press('enter')
         time.sleep(1)
         pyautogui.scroll(-700) # scroll down
     else:
         print('Wrong tab number:', str(tab_number))
     
-    time.sleep(4)
-    #time.sleep(5)
+    time.sleep(1)
+    #time.sleep(4)
     
 quake_forecast_title = {
     'Chinese': '地震預報：',
