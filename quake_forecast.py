@@ -268,7 +268,9 @@ def name_new_files(file_number=1, to_WeChat=False, date_stamp=None):
 
 def insert_Analysis_file(file_number):    
     click_Blogger_tab()
+    time.sleep(1)
     click_Edit_area()
+    time.sleep(1)
     
     if (file_number is 1):
         pyautogui.press('enter')
