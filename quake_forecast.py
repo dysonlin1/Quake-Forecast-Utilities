@@ -283,7 +283,7 @@ def insert_Analysis_file(file_number):
     pyautogui.moveTo(x, y)
     #time.sleep(0.5)
     pyautogui.click()
-    #time.sleep(0.5)
+    time.sleep(0.5)
     
     if (file_number is 1):
         #(x, y) = (700, 400)
