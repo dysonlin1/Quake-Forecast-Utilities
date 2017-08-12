@@ -100,13 +100,13 @@ def get_file_name(file_number, file_type='original'):
 
     (file_name_x, file_name_y) = get_file_name_location(file_number, file_type)
     pyautogui.moveTo(file_name_x, file_name_y)
-    #time.sleep(0.5)
     pyautogui.click()
     time.sleep(0.5)
-    pyautogui.rightClick()
-    for i in range(3):
-        pyautogui.press('down')
-        #time.sleep(0.5)
+    
+    #pyautogui.rightClick()
+    #for i in range(3):
+    #    pyautogui.press('down')
+        
     pyautogui.press('c') # copy file name to clipboard
     time.sleep(0.5)
     
