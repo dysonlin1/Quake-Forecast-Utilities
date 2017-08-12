@@ -102,7 +102,7 @@ def get_file_name(file_number, file_type='original'):
     pyautogui.moveTo(file_name_x, file_name_y)
     #time.sleep(0.5)
     pyautogui.click()
-    #time.sleep(0.5)
+    time.sleep(0.5)
     pyautogui.rightClick()
     for i in range(3):
         pyautogui.press('down')
