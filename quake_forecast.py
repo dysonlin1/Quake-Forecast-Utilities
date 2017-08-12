@@ -53,16 +53,16 @@ def click_Font_Size():
     
 def scroll_down():
     pyautogui.moveTo(1100, 600)
-    time.sleep(1)
+    #time.sleep(1)
     pyautogui.scroll(-10000) # scroll down
-    time.sleep(1)
+    #time.sleep(1)
     
 def click_Edit_area():    
     # click bottom of Edit area
     pyautogui.moveTo(1100, 1000)
-    time.sleep(1)
+    #time.sleep(1)
     pyautogui.click()
-    time.sleep(1)
+    #time.sleep(1)
     
 def click_image(y):
     scroll_down()
@@ -70,9 +70,9 @@ def click_image(y):
     x = 700
            
     pyautogui.moveTo(x, y)
-    time.sleep(1)
+    #time.sleep(1)
     pyautogui.click()
-    time.sleep(1)
+    #time.sleep(1)
     
 def get_file_location(file_number, file_type='original'):
     if ((file_type is 'analysis') | (file_type is 'old')):
@@ -268,9 +268,9 @@ def name_new_files(file_number=1, to_WeChat=False, date_stamp=None):
 
 def insert_Analysis_file(file_number):    
     click_Blogger_tab()
-    time.sleep(1)
+    #time.sleep(1)
     click_Edit_area()
-    time.sleep(1)
+    #time.sleep(1)
     
     if (file_number is 1):
         pyautogui.press('enter')
@@ -281,20 +281,21 @@ def insert_Analysis_file(file_number):
     (x, y) = get_file_location(file_number, 'analysis')
     
     pyautogui.moveTo(x, y)
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.click()
-    time.sleep(0.5)
+    #time.sleep(0.5)
     
     if (file_number is 1):
         #(x, y) = (700, 400)
-        (x, y) = (567, 400)
+        (x, y) = (567, 410)
     else:
         #(x, y) = (700, 957)
         (x, y) = (567, 957)
         
     #pyautogui.dragTo(x, y, 2)
     pyautogui.dragTo(x, y, 3)
-    time.sleep(5)
+    #time.sleep(5)
+    time.sleep(7)
 
     scroll_down()
 
