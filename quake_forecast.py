@@ -286,11 +286,14 @@ def insert_Analysis_file(file_number):
     time.sleep(0.5)
     
     if (file_number is 1):
-        (x, y) = (700, 400)
+        #(x, y) = (700, 400)
+        (x, y) = (567, 400)
     else:
-        (x, y) = (700, 957)
+        #(x, y) = (700, 957)
+        (x, y) = (567, 957)
         
-    pyautogui.dragTo(x, y, 2)
+    #pyautogui.dragTo(x, y, 2)
+    pyautogui.dragTo(x, y, 3)
     time.sleep(5)
 
     scroll_down()
