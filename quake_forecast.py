@@ -12,11 +12,11 @@ def locate_and_click(png_file_name):
         
         # move mouse
         pyautogui.moveTo(x, y)
-        time.sleep(1)
+        #time.sleep(1)
         
         # click
         pyautogui.click(x, y)
-        time.sleep(0.5)
+        #time.sleep(0.5)
     except:
         print('Cannot locate:' + png_file_name)
     
@@ -26,7 +26,7 @@ def click_Blogger_tab():
 def click_Blog_Title():
     #locate_and_click('BlogTitle.png')
     pyautogui.moveTo(1147, 216)
-    time.sleep(0.1)
+    #time.sleep(0.1)
     pyautogui.click() # click
 
 def click_Publish_button():
@@ -95,14 +95,14 @@ def get_file_name_location(file_number, file_type='original'):
 def get_file_name(file_number, file_type='original'):
     (file_x, file_y) = get_file_location(file_number, file_type)
     pyautogui.moveTo(file_x, file_y)
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.click()
 
     (file_name_x, file_name_y) = get_file_name_location(file_number, file_type)
     pyautogui.moveTo(file_name_x, file_name_y)
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.click()
-    time.sleep(0.5)
+    #time.sleep(0.5)
     pyautogui.rightClick()
     for i in range(3):
         pyautogui.press('down')
