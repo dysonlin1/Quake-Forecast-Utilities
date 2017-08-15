@@ -293,8 +293,8 @@ def insert_Analysis_file(file_number):
         (x, y) = (600, 957)
         
     pyautogui.dragTo(x, y, 2)
-    #time.sleep(5)
-    time.sleep(7)
+    #time.sleep(7)
+    time.sleep(10)
 
     scroll_down()
 
@@ -349,7 +349,8 @@ def insert_original_file(file_number):
     time.sleep(0.5)
     
     pyautogui.dragTo(700, 957, 2)
-    time.sleep(5)
+    #time.sleep(5)
+    time.sleep(10)
     scroll_down()
     
     click_Edit_area()
@@ -675,7 +676,8 @@ def publish_blog():
     
 def view_blog():
     click_Blogger_tab()
-    time.sleep(10)
+    #time.sleep(10)
+    time.sleep(1)
     pyautogui.moveTo(833, 504)
     time.sleep(5)
     pyautogui.moveTo(833, 506)
