@@ -668,8 +668,8 @@ def post_to_Twitter():
 
 def publish_blog():
     pyautogui.moveTo(1717, 237)
-    #time.sleep(5)
-    time.sleep(1)
+    time.sleep(5)
+    #time.sleep(1)
     pyautogui.click()
     #time.sleep(5)
     time.sleep(1)
