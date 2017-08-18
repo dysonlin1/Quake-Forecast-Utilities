@@ -788,8 +788,7 @@ def post_to_Facebook(tab_number):
         pyautogui.press('enter')
         time.sleep(1)
     elif tab_number is 3:
-        #for i in range(0, 14):
-        for i in range(0, 13):
+        for i in range(0, 14):
             pyautogui.press('tab')
         pyautogui.press('enter')
         time.sleep(1)
