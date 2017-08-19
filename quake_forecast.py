@@ -774,7 +774,7 @@ def post_to_Facebook(tab_number):
         time.sleep(2)
         
         #for i in range(0, 10):
-        for i in range(0, 12):
+        for i in range(0, 11):
             pyautogui.press('tab')
         pyautogui.press('enter')
         time.sleep(1)
