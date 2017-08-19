@@ -773,7 +773,8 @@ def post_to_Facebook(tab_number):
         pyautogui.scroll(-700) # scroll down
         time.sleep(2)
         
-        for i in range(0, 10):
+        #for i in range(0, 10):
+        for i in range(0, 12):
             pyautogui.press('tab')
         pyautogui.press('enter')
         time.sleep(1)
