@@ -674,16 +674,12 @@ def publish_blog():
     
 def view_blog():
     click_Blogger_tab()
-    #time.sleep(10)
     time.sleep(1)
     pyautogui.moveTo(833, 504)
-    #time.sleep(5)
     time.sleep(1)
     pyautogui.moveTo(833, 506)
-    #time.sleep(5)
     time.sleep(1)
     pyautogui.click()
-    #time.sleep(10)
     time.sleep(1)
 
 def close_Blogger_article_list():
