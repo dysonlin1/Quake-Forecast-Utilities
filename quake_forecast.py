@@ -557,15 +557,11 @@ def set_blog_text():
     scroll_down()
     click_Edit_area()
     pyautogui.press('backspace')
-    #time.sleep(0.5)
 
     pyautogui.rightClick()
     pyautogui.press('down')
-    #time.sleep(0.5)
     pyautogui.press('down')
-    #time.sleep(0.5)
     pyautogui.press('p') # paste from clipboard
-    #time.sleep(0.5)
     
 def click_Facebook_tab(tab_number):
     global Facebook_tab_1_x
