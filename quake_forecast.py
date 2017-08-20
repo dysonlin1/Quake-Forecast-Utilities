@@ -268,9 +268,7 @@ def name_new_files(file_number=1, to_WeChat=False, date_stamp=None):
 
 def insert_Analysis_file(file_number):    
     click_Blogger_tab()
-    #time.sleep(1)
     click_Edit_area()
-    #time.sleep(1)
     
     if (file_number is 1):
         pyautogui.press('enter')
@@ -281,7 +279,7 @@ def insert_Analysis_file(file_number):
     (x, y) = get_file_location(file_number, 'analysis')
     
     pyautogui.moveTo(x, y)
-    #time.sleep(0.5)
+    time.sleep(0.5)
     pyautogui.click()
     time.sleep(0.5)
     
@@ -292,10 +290,8 @@ def insert_Analysis_file(file_number):
         #(x, y) = (700, 957)
         (x, y) = (600, 957)
         
-    #pyautogui.dragTo(x, y, 2)
-    pyautogui.dragTo(x, y)
-    #time.sleep(7)
-    time.sleep(10)
+    pyautogui.dragTo(x, y, 3)
+    time.sleep(7)
 
     scroll_down()
 
