@@ -292,7 +292,8 @@ def insert_Analysis_file(file_number):
         #(x, y) = (700, 957)
         (x, y) = (600, 957)
         
-    pyautogui.dragTo(x, y, 2)
+    #pyautogui.dragTo(x, y, 2)
+    pyautogui.dragTo(x, y)
     #time.sleep(7)
     time.sleep(10)
 
