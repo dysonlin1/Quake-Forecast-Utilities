@@ -284,13 +284,14 @@ def insert_Analysis_file(file_number):
     time.sleep(0.5)
     
     if (file_number is 1):
-        #(x, y) = (700, 400)
-        (x, y) = (600, 400)
+        (x, y) = (700, 400)
+        #(x, y) = (600, 400)
+        pyautogui.dragTo(x, y, 5)
     else:
-        #(x, y) = (700, 957)
-        (x, y) = (600, 957)
-        
-    pyautogui.dragTo(x, y, 3)
+        (x, y) = (700, 957)
+        #(x, y) = (600, 957)
+        pyautogui.dragTo(x, y, 3)
+    
     time.sleep(7)
 
     scroll_down()
@@ -317,7 +318,6 @@ def insert_Analysis_file(file_number):
     time.sleep(1)
     for i in range(3):
         pyautogui.press('down')
-        #time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(1)
 
@@ -346,8 +346,8 @@ def insert_original_file(file_number):
     time.sleep(0.5)
     
     pyautogui.dragTo(700, 957, 2)
-    #time.sleep(5)
-    time.sleep(10)
+    time.sleep(7)
+    #time.sleep(10)
     scroll_down()
     
     click_Edit_area()
@@ -367,7 +367,6 @@ def insert_original_file(file_number):
     time.sleep(1)
     for i in range(3):
         pyautogui.press('down')
-        #time.sleep(0.5)
     pyautogui.press('enter')
     time.sleep(1)
 
