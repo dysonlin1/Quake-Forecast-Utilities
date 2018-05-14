@@ -4,6 +4,10 @@ import pyperclip
 pyautogui.PAUSE = 0.4
 pyautogui.FAILSAFE = True
 
+def editblog_test():
+    print('editblog_test')
+
+
 def locate_and_click(png_file_name):
     try:
         # locate
