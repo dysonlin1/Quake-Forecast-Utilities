@@ -1,233 +1,28 @@
 time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
-2025-01-20T16:17:26.768Z,23.1678,120.5468,16,6,mww,151,29,0.152,0.65,us,us6000pl8h,2025-02-03T09:24:39.265Z,"9 km ENE of Yujing, Taiwan",earthquake,4.72,1.721,0.044,50,reviewed,us,us
-2024-08-15T23:35:53.943Z,23.7491,121.7669,14,6.1,mww,146,17,0.451,0.61,us,us7000n7b8,2024-10-26T15:48:52.040Z,"30 km SSE of Hualien City, Taiwan",earthquake,3.34,1.036,0.045,48,reviewed,us,us
-2024-04-22T18:32:48.439Z,23.8586,121.5662,10,6.1,mww,120,22,0.526,0.65,us,us6000mt0s,2024-07-02T22:12:10.040Z,"13 km SSW of Hualien City, Taiwan",earthquake,2.83,1.821,0.065,23,reviewed,us,us
-2024-04-22T18:26:52.852Z,23.7141,121.6599,9,6.1,mww,119,35,0.462,0.76,us,us6000mt0r,2024-07-02T22:12:10.040Z,"29 km S of Hualien City, Taiwan",earthquake,2.91,1.823,0.059,28,reviewed,us,us
-2024-04-03T00:11:25.266Z,24.1021,121.6812,13.931,6.4,mww,183,50,0.63,0.77,us,us7000m9gc,2024-06-12T21:51:51.040Z,"15 km NNE of Hualien City, Taiwan",earthquake,3.79,3.485,0.062,25,reviewed,us,us
 2024-04-02T23:58:12.173Z,23.8356,121.5976,40,7.4,mww,322,17,0.337,0.93,us,us7000m9g4,2025-01-30T03:33:06.675Z,"15 km S of Hualien City, Taiwan",earthquake,4.73,1.877,0.027,133,reviewed,us,us
-2022-09-18T06:44:13.846Z,23.138,121.3439,10,6.9,mww,215,34,0.401,0.58,us,us7000i90q,2024-04-11T17:09:28.863Z,"90 km E of Yujing, Taiwan",earthquake,6.07,1.822,0.038,68,reviewed,us,us
-2022-09-17T13:41:17.890Z,23.1191,121.4138,10,6.5,mww,178,54,0.43,0.75,us,us7000i8ui,2024-04-11T17:05:28.424Z,"96 km SE of Lugu, Taiwan",earthquake,7.54,1.746,0.038,67,reviewed,us,us
-2022-05-09T06:23:02.067Z,24.0406,122.4888,21,6.2,mww,200,34,0.638,0.34,us,us7000h82f,2022-07-22T18:31:08.040Z,"70 km SW of Yonakuni, Japan",earthquake,6.1,1.8,0.049,40,reviewed,us,us
-2022-03-22T17:41:38.584Z,23.3839,121.6118,24,6.7,mww,,32,0.289,0.83,us,us6000h6nr,2022-08-10T03:20:17.453Z,"65 km S of Hualien City, Taiwan",earthquake,4.5,1.7,0.083,14,reviewed,us,us
-2022-01-03T09:46:35.767Z,24.0079,122.2592,19,6.2,mww,,66,0.629,0.9,us,us7000g8n3,2022-12-15T04:25:35.010Z,"66 km E of Hualien City, Taiwan",earthquake,4.4,1.7,0.053,34,reviewed,us,us
-2021-10-24T05:11:34.230Z,24.5108,121.8314,69,6.2,mww,,18,0.399,0.92,us,us6000fx56,2022-01-08T17:42:13.040Z,"28 km SSE of Yilan, Taiwan",earthquake,6.3,1.9,0.048,41,reviewed,us,us
-2020-12-10T13:19:58.682Z,24.7818,122.0243,71,6.1,mww,,18,0.515,0.76,us,us7000cpqz,2022-03-10T05:49:46.366Z,"27 km E of Yilan, Taiwan",earthquake,3.8,1.6,0.061,26,reviewed,us,us
-2019-04-18T05:01:06.493Z,24.0374,121.6501,20,6.1,mww,,23,0.144,1.15,us,us700038c1,2020-07-10T17:38:53.068Z,"8 km NE of Hualien City, Taiwan",earthquake,7,1.8,0.051,37,reviewed,us,us
-2018-02-06T15:50:43.320Z,24.1338,121.6586,17,6.4,mww,,34,0.07,0.91,us,us1000chhc,2023-12-18T17:00:58.087Z,"18 km NNE of Hualien City, Taiwan",earthquake,3.9,1.7,0.047,44,reviewed,us,us
-2018-02-04T13:56:41.950Z,24.1572,121.7078,12,6.1,mww,,30,0.104,0.87,us,us1000cfn6,2022-05-03T19:02:50.693Z,"22 km NNE of Hualien City, Taiwan",earthquake,5.5,1.7,0.047,43,reviewed,us,us
-2016-02-05T19:57:27.380Z,22.9375,120.6014,23,6.4,mww,,14,0.362,1.19,us,us20004y6h,2023-12-18T16:08:52.259Z,"25 km SE of Yujing, Taiwan",earthquake,4.2,1.7,,,reviewed,us,us
-2015-04-20T12:00:00.070Z,24.0471,122.4532,29,6.1,mww,,26,0.659,0.77,us,us200027ru,2022-07-31T00:14:46.952Z,"72 km SW of Yonakuni, Japan",earthquake,5.5,1.8,,,reviewed,us,us
-2015-04-20T11:45:13.440Z,24.0851,122.453,29,6,mww,,12,0.635,0.69,us,us200027rt,2022-07-31T00:13:52.551Z,"69 km SW of Yonakuni, Japan",earthquake,4.3,1.7,,,reviewed,us,us
-2015-04-20T01:42:58.380Z,24.2026,122.3158,29,6.4,mww,,11,0.659,1.26,us,us200027ps,2022-08-07T07:57:54.402Z,"75 km WSW of Yonakuni, Japan",earthquake,6,1.7,,,reviewed,us,us
-2015-02-13T20:06:32.330Z,22.6374,121.427,30,6.2,mww,,14,0.367,1.09,us,usb000tp6y,2022-08-07T07:48:18.738Z,"Taiwan region",earthquake,5.4,3.1,,,reviewed,us,us
-2013-10-31T12:02:08.720Z,23.5904,121.4366,10,6.3,mww,,15,0.234,1.29,us,usc000ksdy,2022-09-24T16:30:16.680Z,"46 km SSW of Hualien City, Taiwan",earthquake,,1.7,,,reviewed,us,us
-2013-06-02T05:43:03.460Z,23.789,121.141,17,6.2,mww,434,39,,0.66,us,usb000hbrt,2022-07-25T04:12:10.004Z,"26 km SE of Puli, Taiwan",earthquake,,,,,reviewed,us,us
-2010-03-04T00:18:51.290Z,22.918,120.795,21,6.3,mwc,326,19.8,,0.88,us,usp000h8nd,2022-07-16T04:46:10.797Z,"41 km SE of Yujing, Taiwan",earthquake,,,,,reviewed,us,gcmt
-2009-12-19T13:02:15.570Z,23.796,121.605,43,6.4,mwc,426,13.6,,1.04,us,usp000h56g,2022-10-07T16:21:19.140Z,"20 km S of Hualien City, Taiwan",earthquake,,,,,reviewed,us,us
-2009-10-03T17:36:06.120Z,23.63,121.452,28,6.1,mww,311,22.4,,0.97,us,usp000h2b0,2022-07-15T18:34:01.330Z,"41 km SSW of Hualien City, Taiwan",earthquake,,,,,reviewed,us,us
-2009-07-13T18:05:01.420Z,24.056,122.201,17,6.3,mwc,256,22.2,,1.04,us,usp000gz7c,2022-07-15T13:53:06.656Z,"61 km E of Hualien City, Taiwan",earthquake,,,,,reviewed,us,gcmt
-2008-04-23T18:28:41.880Z,22.881,121.619,10,6,mwc,190,53.1,,1.31,us,usp000g4nm,2022-07-13T19:43:02.067Z,"121 km S of Hualien City, Taiwan",earthquake,,,,,reviewed,us,us
-2007-09-06T17:51:26.190Z,24.34,122.219,53,6.2,mwc,490,32.1,,0.87,us,usp000fmjx,2022-07-14T03:19:15.553Z,"66 km SE of Yilan, Taiwan",earthquake,,,,,reviewed,us,gcmt
-2007-01-25T10:59:17.650Z,22.564,121.926,36.2,6,mwb,220,49.9,,1.1,us,usp000f3jg,2022-07-14T08:06:57.421Z,"136 km ENE of Hengchun, Taiwan",earthquake,,,,,reviewed,us,us
-2006-12-26T12:34:13.800Z,21.974,120.493,10,6.9,mwc,466,31.6,,1.12,us,usp000f115,2022-07-14T08:29:27.277Z,"26 km W of Hengchun, Taiwan",earthquake,,,,,reviewed,us,gcmt
 2006-12-26T12:26:21.140Z,21.799,120.547,10,7.1,mwb,744,29.1,,1,us,usp000f114,2022-08-09T06:10:24.622Z,"30 km SW of Hengchun, Taiwan",earthquake,,,,,reviewed,us,us
-2006-04-01T10:02:19.570Z,22.868,121.278,9,6.1,mwb,429,17.9,,1.02,us,usp000ede6,2022-07-14T12:02:32.508Z,"88 km ESE of Yujing, Taiwan",earthquake,,,,,reviewed,us,us
-2004-05-19T07:04:11.710Z,22.662,121.505,20,6.2,mwc,501,23.9,,0.9,us,usp000cvj3,2022-05-02T17:12:14.897Z,"107 km NE of Hengchun, Taiwan",earthquake,,,,,reviewed,us,hrv
-2003-12-10T04:38:11.590Z,23.039,121.362,10,6.8,mwb,447,27.7,,1.1,us,usp000cexg,2022-05-02T16:55:55.651Z,"92 km E of Yujing, Taiwan",earthquake,,,,,reviewed,us,us
-2003-06-10T08:40:30.830Z,23.52,121.628,44.5,6,mwc,429,28.3,,0.92,us,usp000bzhv,2022-05-02T15:52:53.074Z,"50 km S of Hualien City, Taiwan",earthquake,,,,,reviewed,us,hrv
-2002-05-28T16:45:17.100Z,24.069,122.264,33,6.1,mwc,305,,,1,us,usp000b54k,2022-05-02T16:00:58.673Z,"67 km E of Hualien City, Taiwan",earthquake,,,,,reviewed,us,hrv
-2002-05-15T03:46:05.760Z,24.636,121.922,10,6.2,mwc,335,,,0.98,us,usp000b4bg,2022-05-02T15:58:30.418Z,"21 km SE of Yilan, Taiwan",earthquake,,,,,reviewed,us,hrv
 2002-03-31T06:52:50.490Z,24.279,122.179,32.8,7.1,mwc,550,,,0.96,us,usp000b1e2,2022-05-02T15:47:40.432Z,"67 km ENE of Hualien City, Taiwan",earthquake,,3.4,,,reviewed,us,hrv
-2000-06-10T18:23:29.320Z,23.843,121.225,33,6.4,mwc,377,,,1.03,us,usp0009ucq,2022-04-29T18:40:36.320Z,"29 km ESE of Puli, Taiwan",earthquake,,,,,reviewed,us,hrv
-1999-11-01T17:53:00.120Z,23.378,121.52,33,6.3,mwc,,,,1.01,us,usp0009gyc,2022-04-29T18:10:08.040Z,"66 km S of Hualien City, Taiwan",earthquake,,,,,reviewed,us,hrv
-1999-09-25T23:52:48.660Z,23.738,121.158,17,6.5,mwc,,,,0.91,us,usp0009f1e,2022-04-29T18:18:43.298Z,"31 km SE of Puli, Taiwan",earthquake,,,,,reviewed,us,hrv
-1999-09-22T00:14:39.150Z,23.729,121.167,26,6.4,mwc,,,,0.89,us,usp0009euk,2022-04-29T18:18:37.577Z,"33 km SE of Puli, Taiwan",earthquake,,,,,reviewed,us,hrv
-1999-09-20T21:46:42.870Z,23.39,120.964,33,6.4,mwc,,,,1.41,us,usp0009erf,2022-04-29T18:18:36.137Z,"44 km SSE of Lugu, Taiwan",earthquake,,,,,reviewed,us,hrv
-1999-09-20T18:16:18.510Z,23.756,121.246,33,6.2,mb,,,,0.9,us,usp0009eq7,2022-05-09T19:12:58.799Z,"36 km SE of Puli, Taiwan",earthquake,,,,88,reviewed,us,us
-1999-09-20T18:11:53.650Z,23.746,121.189,33,6.1,mb,,,,0.83,us,usp0009eq6,2022-04-29T18:18:34.462Z,"33 km SE of Puli, Taiwan",earthquake,,,,99,reviewed,us,us
-1999-09-20T18:03:44.290Z,23.57,121.299,33,6.3,mb,,,,1.42,us,usp0009eq5,2022-04-29T18:18:32.864Z,"54 km SW of Hualien City, Taiwan",earthquake,,,,80,reviewed,us,us
-1999-09-20T17:57:16.090Z,23.785,121.202,33,6.1,mb,,,,0.83,us,usp0009eq2,2022-04-29T18:18:31.271Z,"31 km SE of Puli, Taiwan",earthquake,,,,84,reviewed,us,us
 1999-09-20T17:47:18.490Z,23.772,120.982,33,7.7,mwc,,,,1.11,us,usp0009eq0,2022-04-29T18:27:36.664Z,"21 km S of Puli, Taiwan",earthquake,,,,,reviewed,us,hrv
-1996-09-05T23:42:06.150Z,21.898,121.498,20,6.8,mwc,,,,1.03,us,usp0007pfw,2022-04-29T20:31:26.158Z,"78 km E of Hengchun, Taiwan",earthquake,,,,,reviewed,us,hrv
-1996-03-05T14:52:28.680Z,24.092,122.215,29.5,6.3,mwc,,,,1,us,usp0007ec9,2022-04-29T20:12:49.375Z,"63 km ENE of Hualien City, Taiwan",earthquake,,6.4,,,reviewed,us,hrv
-1995-06-25T06:59:06.240Z,24.6,121.7,52.4,6,mw,,,,1,us,usp0006znz,2022-04-29T16:40:07.927Z,"18 km SSW of Yilan, Taiwan",earthquake,,,,,reviewed,us,hrv
-1995-02-23T05:19:01.990Z,24.137,121.614,40.9,6.2,mw,,,,1,us,usp0006tcx,2022-04-29T17:44:13.288Z,"17 km N of Hualien City, Taiwan",earthquake,,,,,reviewed,us,hrv
-1994-06-05T01:09:30.150Z,24.511,121.905,11.4,6.4,mwb,,,,1.2,us,usp0006drf,2022-04-28T17:38:37.059Z,"31 km SSE of Yilan, Taiwan",earthquake,,,,,reviewed,us,us
-1994-05-24T04:00:42.180Z,23.959,122.448,16.3,6.6,mwb,,,,1.2,us,usp0006d02,2022-04-28T17:42:56.686Z,"79 km SW of Yonakuni, Japan",earthquake,,,,,reviewed,us,us
-1992-04-19T18:32:19.000Z,23.861,121.594,15.5,6.2,mwb,,,,1.1,us,usp000560s,2022-04-28T18:50:14.512Z,"12 km S of Hualien City, Taiwan",earthquake,,,,,reviewed,us,us
-1991-03-26T03:58:23.260Z,21.704,121.789,17.7,6.3,mw,,,,1.2,us,usp0004php,2022-04-28T19:21:46.946Z,"113 km ESE of Hengchun, Taiwan",earthquake,,,,,reviewed,us,hrv
-1990-12-13T19:50:17.880Z,23.722,121.627,10,6.7,mw,,,,1.1,us,usp0004j34,2022-04-28T17:24:57.887Z,"28 km S of Hualien City, Taiwan",earthquake,,,,,reviewed,us,nc
-1990-12-13T03:01:48.050Z,23.916,121.636,12.1,6.3,mw,,,,1.2,us,usp0004j21,2022-04-28T19:30:09.273Z,"7 km SSE of Hualien City, Taiwan",earthquake,,,,,reviewed,us,hrv
-1989-08-21T23:12:41.440Z,24.094,122.478,42.8,6.3,mw,,,,1.2,us,usp0003yrb,2022-04-28T20:13:19.411Z,"67 km SW of Yonakuni, Japan",earthquake,,,,,reviewed,us,hrv
-1989-08-03T11:31:20.430Z,23.043,121.965,10.7,6.6,mw,,,,1.3,us,usp0003y09,2022-04-28T20:12:02.799Z,"109 km SSE of Hualien City, Taiwan",earthquake,,,,,reviewed,us,nc
-1988-10-16T12:09:27.720Z,21.856,121.699,33,6,mw,,,,1.3,us,usp0003mve,2022-04-28T20:33:42.863Z,"100 km E of Hengchun, Taiwan",earthquake,,,,,reviewed,us,hrv
-1986-11-14T23:04:37.090Z,23.866,121.711,33,6.3,ms,,,,1.4,us,usp000300e,2022-04-27T22:00:12.591Z,"16 km SE of Hualien City, Taiwan",earthquake,,,,6,reviewed,us,us
 1986-11-14T21:20:10.550Z,23.901,121.574,33.8,7.4,mw,,,,1.2,us,usp0003009,2022-04-27T22:00:01.821Z,"8 km SSW of Hualien City, Taiwan",earthquake,,,,,reviewed,us,hrv
-1986-05-20T05:25:46.960Z,24.125,121.619,19.3,6.2,mw,,,,1.2,us,usp0002u79,2022-04-27T22:17:29.861Z,"16 km N of Hualien City, Taiwan",earthquake,,,,,reviewed,us,nc
-1986-01-16T13:04:31.350Z,24.771,122.013,12.6,6,mw,,,,1.2,us,usp0002q43,2022-04-27T22:26:23.746Z,"26 km E of Yilan, Taiwan",earthquake,,3.8,,,reviewed,us,hrv
-1983-09-21T19:20:42.460Z,24.095,122.148,28.2,6.3,mw,,,,1.1,us,usp0001yhr,2022-04-27T23:51:20.289Z,"56 km ENE of Hualien City, Taiwan",earthquake,,,,,reviewed,us,nc
-1983-06-24T09:06:45.800Z,24.176,122.402,44.1,6.7,mw,,,,1,us,usp0001wb0,2022-04-27T23:58:16.172Z,"68 km WSW of Yonakuni, Japan",earthquake,,1.7,,,reviewed,us,nc
-1983-06-21T14:48:07.340Z,24.199,122.422,36.9,6.4,mw,,,,1,us,usp0001w8q,2022-04-27T23:58:04.578Z,"65 km WSW of Yonakuni, Japan",earthquake,,2.2,,,reviewed,us,nc
 1978-12-23T11:23:12.000Z,23.247,122.075,33,7,ms,,,,,us,usp0000y1y,2022-04-27T15:20:19.152Z,"94 km SSE of Hualien City, Taiwan",earthquake,,,,,reviewed,us,us
-1978-09-02T01:57:33.400Z,24.896,121.985,109,6.1,mb,,,,,us,usp0000waz,2022-04-27T15:25:07.825Z,"27 km SSE of Jiufen, Taiwan",earthquake,,,,,reviewed,us,us
 1978-07-23T14:42:36.900Z,22.282,121.512,17,7.4,ms,,,,,us,usp0000vpz,2022-04-27T15:33:14.901Z,"85 km ENE of Hengchun, Taiwan",earthquake,,,,,reviewed,us,us
-1972-11-09T18:41:15.310Z,23.898,121.562,22.9,6.1,mw,,,,,iscgem,iscgem767168,2022-04-26T20:34:54.118Z,"9 km SSW of Hualien City, Taiwan",earthquake,,3.9,0.2,,reviewed,iscgem,iscgem
-1972-09-22T19:57:28.720Z,22.413,121.123,25,6.3,mw,,,,,iscgem,iscgem769766,2022-04-26T20:43:19.324Z,"59 km NE of Hengchun, Taiwan",earthquake,,3.8,0.2,,reviewed,iscgem,iscgem
 1972-04-24T09:57:21.790Z,23.564,121.539,22.2,7,mw,,,,,iscgem,iscgem774714,2022-04-26T20:52:44.410Z,"46 km S of Hualien City, Taiwan",earthquake,,3.7,0.2,,reviewed,iscgem,iscgem
 1972-01-25T03:41:24.780Z,23.107,121.974,25,7.11,mw,,,,,iscgem,iscgem777209,2022-04-26T20:57:59.791Z,"103 km SSE of Hualien City, Taiwan",earthquake,,3.9,0.38,,reviewed,iscgem,iscgem
 1972-01-25T02:06:24.630Z,22.632,122.269,25,7.3,mw,,,,,iscgem,iscgem777208,2022-04-26T20:57:57.956Z,"163 km SSE of Hualien City, Taiwan",earthquake,,3.9,0.2,,reviewed,iscgem,iscgem
-1972-01-04T03:16:56.230Z,22.638,122.067,28,6.9,mw,,,,,iscgem,iscgem776670,2022-04-26T20:56:59.536Z,"153 km ENE of Hengchun, Taiwan",earthquake,,3.9,0.2,,reviewed,iscgem,iscgem
-1971-10-30T20:48:50.160Z,23.024,121.404,35,6.2,mw,,,,,iscgem,iscgem779829,2022-04-26T21:03:21.624Z,"97 km E of Yujing, Taiwan",earthquake,,7.3,0.47,,reviewed,iscgem,iscgem
-1971-08-19T08:28:56.040Z,23.991,121.913,25.6,6.17,mw,,,,,iscgem,iscgem781373,2022-04-27T14:07:03.120Z,"31 km E of Hualien City, Taiwan",earthquake,,4.6,0.2,,reviewed,iscgem,iscgem
-1970-11-14T07:58:21.580Z,22.78,121.349,29.5,6.2,mw,,,,,iscgem,iscgem790201,2022-04-26T21:29:16.754Z,"98 km ESE of Yujing, Taiwan",earthquake,,3.6,0.2,,reviewed,iscgem,iscgem
-1970-02-25T10:20:59.520Z,24.126,122.253,30,6.08,mw,,,,,iscgem,iscgem799415,2022-04-26T21:49:06.332Z,"68 km ENE of Hualien City, Taiwan",earthquake,,14.3,0.2,,reviewed,iscgem,iscgem
-1968-10-20T07:08:21.480Z,24.95,122.439,22.5,6.16,mw,,,,,iscgem,iscgem816127,2022-04-26T22:19:07.873Z,"62 km ESE of Jiufen, Taiwan",earthquake,,3.3,0.46,,reviewed,iscgem,iscgem
-1968-02-26T10:50:19.710Z,22.733,121.368,25,6.66,mw,,,,,iscgem,iscgem826743,2022-04-26T22:39:00.367Z,"99 km ENE of Donggang, Taiwan",earthquake,,3.7,0.2,,reviewed,iscgem,iscgem
-1968-01-13T07:03:45.350Z,23.965,122.161,35,6.1,mw,,,,,iscgem,iscgem827209,2022-04-26T22:39:49.258Z,"56 km E of Hualien City, Taiwan",earthquake,,4.7,0.2,,reviewed,iscgem,iscgem
-1967-10-25T00:59:25.090Z,24.401,122.218,71.1,6.8,mw,,,,,iscgem,iscgem830608,2022-04-26T22:46:47.674Z,"61 km SE of Yilan, Taiwan",earthquake,,5.1,0.2,,reviewed,iscgem,iscgem
-1966-07-01T05:50:40.040Z,24.739,122.414,112.5,6.4,mw,,,,,iscgem,iscgem845124,2022-04-26T23:14:19.805Z,"66 km WNW of Yonakuni, Japan",earthquake,,5,0.2,,reviewed,iscgem,iscgem
-1965-05-17T17:19:33.800Z,22.336,121.248,68.4,6.7,mw,,,,,iscgem,iscgem856924,2022-04-26T23:39:58.164Z,"63 km NE of Hengchun, Taiwan",earthquake,,4.7,0.2,,reviewed,iscgem,iscgem
-1964-11-26T10:21:08.110Z,24.934,121.934,15,6.22,mw,,,,,iscgem,iscgem863068,2022-04-26T23:54:37.350Z,"21 km SSE of Jiufen, Taiwan",earthquake,,3.6,0.36,,reviewed,iscgem,iscgem
-1964-01-18T12:04:44.640Z,23.097,120.683,48.1,6.5,mw,,,,,iscgem,iscgem871334,2022-04-27T00:17:02.314Z,"22 km E of Yujing, Taiwan",earthquake,,4.8,0.2,,reviewed,iscgem,iscgem
-1963-03-10T02:53:33.120Z,24.693,122.158,15,6.07,mw,,,,,iscgem,iscgem871951,2022-04-27T00:18:59.985Z,"41 km E of Yilan, Taiwan",earthquake,,8,0.22,,reviewed,iscgem,iscgem
-1963-03-04T13:38:42.960Z,24.519,121.951,20,6.27,mw,,,,,iscgem,iscgem17293413,2022-04-26T20:28:26.674Z,"33 km SE of Yilan, Taiwan",earthquake,,3.8,0.21,,reviewed,iscgem,iscgem
 1963-02-13T08:50:04.250Z,24.411,122.094,30,7.2,mw,,,,,iscgem,iscgem871818,2022-04-27T00:18:44.546Z,"51 km SE of Yilan, Taiwan",earthquake,,3.9,0.2,,reviewed,iscgem,iscgem
-1962-10-08T21:56:25.930Z,24.251,121.893,35,6.49,mw,,,,,iscgem,iscgem17292837,2022-04-26T16:06:44.422Z,"42 km NE of Hualien City, Taiwan",earthquake,,4.7,0.68,,reviewed,iscgem,iscgem
-1961-09-17T08:41:58.420Z,24.02,122.28,34.1,6.11,mw,,,,,iscgem,iscgem877393,2022-04-26T16:23:25.131Z,"68 km E of Hualien City, Taiwan",earthquake,,4.8,0.26,,reviewed,iscgem,iscgem
-1961-04-09T15:35:13.200Z,24.078,122.124,35,6.87,mw,,,,,iscgem,iscgem876378,2022-04-26T16:18:40.267Z,"54 km ENE of Hualien City, Taiwan",earthquake,,6.4,0.45,,reviewed,iscgem,iscgem
-1959-09-25T02:36:52.140Z,21.964,121.396,20,6.46,mw,,,,,iscgem,iscgem882994,2022-04-26T16:48:28.423Z,"Taiwan region",earthquake,,12.2,0.4,,reviewed,iscgem,iscgem
 1959-08-15T08:57:06.620Z,22.078,121.105,25,7.22,mw,,,,,iscgem,iscgem882641,2022-04-26T16:46:42.345Z,"38 km ENE of Hengchun, Taiwan",earthquake,,10.6,0.59,,reviewed,iscgem,iscgem
-1958-03-15T00:24:06.460Z,22.706,121.884,20,6.17,mw,,,,,iscgem,iscgem884003,2022-04-26T16:55:39.382Z,"140 km ENE of Hengchun, Taiwan",earthquake,,11.2,0.45,,reviewed,iscgem,iscgem
-1958-01-22T18:28:58.830Z,23.601,121.637,25,6.03,mw,,,,,iscgem,iscgem883722,2022-04-26T16:53:41.880Z,"41 km S of Hualien City, Taiwan",earthquake,,10.6,0.21,,reviewed,iscgem,iscgem
-1957-10-19T18:28:58.620Z,23.655,121.517,30,6.85,mw,,,,,iscgem,iscgem887394,2022-04-26T17:18:01.549Z,"36 km SSW of Hualien City, Taiwan",earthquake,,4,0.2,,reviewed,iscgem,iscgem
-1957-08-23T11:42:37.460Z,24.077,121.793,20,6,mw,,,,,iscgem,iscgem887081,2022-04-26T17:15:54.893Z,"22 km ENE of Hualien City, Taiwan",earthquake,,6.4,0.2,,reviewed,iscgem,iscgem
-1957-02-23T20:26:20.220Z,23.965,121.577,55,6.92,mw,,,,,iscgem,iscgem885987,2022-04-26T17:08:10.846Z,"3 km WSW of Hualien City, Taiwan",earthquake,,5.3,0.34,,reviewed,iscgem,iscgem
-1956-06-29T02:21:55.120Z,24.04,122.424,15,6.22,mw,,,,,iscgem,iscgem888410,2022-04-26T17:25:04.985Z,"75 km SW of Yonakuni, Japan",earthquake,,14.3,0.2,,reviewed,iscgem,iscgem
-1955-09-24T10:21:32.350Z,22.118,121.334,15,6.34,mw,,,,,iscgem,iscgem889948,2022-04-26T17:37:29.189Z,"62 km ENE of Hengchun, Taiwan",earthquake,,3.5,0.49,,reviewed,iscgem,iscgem
-1955-09-22T03:25:15.300Z,24.025,122.353,45,6.61,mw,,,,,iscgem,iscgem889944,2022-04-26T17:37:16.645Z,"76 km E of Hualien City, Taiwan",earthquake,,14.3,0.4,,reviewed,iscgem,iscgem
-1955-07-24T16:20:07.060Z,23.396,121.737,15,6.07,mw,,,,,iscgem,iscgem889784,2022-04-26T17:35:27.010Z,"65 km SSE of Hualien City, Taiwan",earthquake,,3.5,0.21,,reviewed,iscgem,iscgem
-1955-06-17T08:06:39.620Z,22.473,121.284,30,6.22,mw,,,,,iscgem,iscgem889659,2022-04-26T17:34:50.885Z,"76 km NE of Hengchun, Taiwan",earthquake,,12.3,0.56,,reviewed,iscgem,iscgem
-1955-06-05T06:11:28.200Z,24.227,121.316,35,6.2,mw,,,,,iscgem,iscgem889611,2022-04-26T17:34:37.621Z,"40 km NW of Hualien City, Taiwan",earthquake,,5.4,0.22,,reviewed,iscgem,iscgem
-1955-04-04T11:11:27.380Z,21.779,121,25,6.5,mw,,,,,iscgem,iscgem889391,2022-04-26T17:33:01.423Z,"36 km SE of Hengchun, Taiwan",earthquake,,4,0.32,,reviewed,iscgem,iscgem
-1952-06-23T12:03:15.070Z,24.365,122.104,38.1,6.17,mw,,,,,iscgem,iscgem893070,2022-04-26T18:04:35.184Z,"56 km SE of Yilan, Taiwan",earthquake,,4.7,0.2,,reviewed,iscgem,iscgem
-1952-06-20T05:46:22.260Z,24.029,121.956,35,6.61,mw,,,,,iscgem,iscgem893050,2022-04-26T18:04:25.518Z,"36 km E of Hualien City, Taiwan",earthquake,,6.4,0.42,,reviewed,iscgem,iscgem
-1951-12-05T06:58:36.960Z,22.679,121.165,15,6.07,mw,,,,,iscgem,iscgem895010,2022-04-26T18:21:38.723Z,"77 km ENE of Donggang, Taiwan",earthquake,,6.2,0.34,,reviewed,iscgem,iscgem
-1951-11-26T06:38:35.670Z,22.817,121.397,30,6.44,mw,,,,,iscgem,iscgem894992,2022-04-26T18:21:29.857Z,"101 km ESE of Yujing, Taiwan",earthquake,,7.3,0.2,,reviewed,iscgem,iscgem
 1951-11-24T18:50:24.400Z,23.092,121.214,30,7.81,mw,,,,,iscgem,iscgem894988,2022-04-26T18:21:28.191Z,"Taiwan",earthquake,,6.6,0.21,,reviewed,iscgem,iscgem
 1951-11-24T18:47:18.300Z,23.046,121.249,25,7.34,mw,,,,,iscgemsup,iscgemsup894987,2022-05-09T20:31:45.252Z,"81 km E of Yujing, Taiwan",earthquake,,4.8,1.28,,reviewed,iscgemsup,iscgemsup
-1951-10-28T01:55:54.850Z,24.138,121.624,25,6.11,mw,,,,,iscgem,iscgem894858,2022-04-26T18:20:08.222Z,"17 km N of Hualien City, Taiwan",earthquake,,7.1,0.23,,reviewed,iscgem,iscgem
-1951-10-25T12:19:48.030Z,24.014,121.555,25,6.58,mw,,,,,iscgem,iscgem894855,2022-04-26T18:20:06.332Z,"6 km NW of Hualien City, Taiwan",earthquake,,7.1,0.59,,reviewed,iscgem,iscgem
-1951-10-24T03:39:07.930Z,23.946,121.623,35,6.27,mw,,,,,iscgem,iscgem894849,2022-04-26T18:20:04.531Z,"3 km SSE of Hualien City, Taiwan",earthquake,,7.1,0.21,,reviewed,iscgem,iscgem
-1951-10-23T18:18:50.760Z,23.964,122.081,25,6.07,mw,,,,,iscgem,iscgem894846,2022-04-26T18:19:59.208Z,"48 km E of Hualien City, Taiwan",earthquake,,6.4,0.2,,reviewed,iscgem,iscgem
-1951-10-23T08:55:19.370Z,23.892,121.548,25,6.31,mw,,,,,iscgem,iscgem894844,2022-04-26T18:19:57.841Z,"11 km SSW of Hualien City, Taiwan",earthquake,,7.1,0.42,,reviewed,iscgem,iscgem
-1951-10-23T01:19:42.640Z,23.867,121.424,25,6.56,mw,,,,,iscgem,iscgem894842,2022-04-26T18:19:51.994Z,"22 km WSW of Hualien City, Taiwan",earthquake,,7.1,0.64,,reviewed,iscgem,iscgem
-1951-10-22T20:51:42.550Z,23.512,121.635,25,6.27,mw,,,,,iscgem,iscgem894840,2022-04-26T18:19:40.935Z,"51 km S of Hualien City, Taiwan",earthquake,,10.6,0.29,,reviewed,iscgem,iscgem
-1951-10-22T20:24:51.160Z,24.269,122.005,25,6,mw,,,,,iscgem,iscgem894839,2022-04-26T18:19:38.795Z,"52 km NE of Hualien City, Taiwan",earthquake,,8,0.42,,reviewed,iscgem,iscgem
-1951-10-22T18:42:37.090Z,23.396,121.357,25,6.18,mw,,,,,iscgem,iscgem894838,2022-04-26T18:19:33.329Z,"69 km SSW of Hualien City, Taiwan",earthquake,,10.6,0.31,,reviewed,iscgem,iscgem
-1951-10-22T16:07:01.400Z,24.022,121.478,25,6.46,mw,,,,,iscgem,iscgem894837,2022-04-26T18:19:27.134Z,"13 km WNW of Hualien City, Taiwan",earthquake,,7.1,0.25,,reviewed,iscgem,iscgem
-1951-10-22T15:29:53.200Z,24.067,121.664,20,6.54,mw,,,,,iscgem,iscgem894836,2022-04-26T18:19:21.768Z,"Taiwan",earthquake,,7.1,0.36,,reviewed,iscgem,iscgem
-1951-10-22T14:46:51.190Z,23.904,121.326,20,6.45,mw,,,,,iscgem,iscgem894835,2022-04-26T18:19:16.095Z,"29 km WSW of Hualien City, Taiwan",earthquake,,7.1,0.2,,reviewed,iscgem,iscgem
-1951-10-22T13:01:17.380Z,23.733,121.508,25,6.31,mw,,,,,iscgem,iscgem894833,2022-04-26T18:19:10.623Z,"28 km SSW of Hualien City, Taiwan",earthquake,,10.6,0.2,,reviewed,iscgem,iscgem
-1951-10-22T12:48:46.250Z,24.188,121.741,30,6.58,mw,,,,,iscgem,iscgem894832,2022-04-26T18:19:08.967Z,"27 km NNE of Hualien City, Taiwan",earthquake,,7.1,0.2,,reviewed,iscgem,iscgem
-1951-10-22T11:11:08.420Z,23.889,121.571,25,6.51,mw,,,,,iscgem,iscgem894831,2022-04-26T18:19:07.624Z,"10 km SSW of Hualien City, Taiwan",earthquake,,7.1,0.41,,reviewed,iscgem,iscgem
-1951-10-22T10:25:46.700Z,23.25,122.223,25,6.18,mw,,,,,iscgemsup,iscgemsup894830,2022-05-09T20:30:20.512Z,"102 km SE of Hualien City, Taiwan",earthquake,,7,0.78,,reviewed,iscgemsup,iscgemsup
-1951-10-22T05:43:07.640Z,23.775,121.393,20,6.96,mw,,,,,iscgem,iscgem894828,2022-04-26T18:19:02.451Z,"31 km SW of Hualien City, Taiwan",earthquake,,3.9,0.36,,reviewed,iscgem,iscgem
-1951-10-22T05:17:48.890Z,23.728,121.062,25,6.46,mw,,,,,iscgem,iscgem894826,2022-04-26T18:19:00.826Z,"Taiwan",earthquake,,7.2,0.61,,reviewed,iscgem,iscgem
-1951-10-22T04:28:12.370Z,23.769,121.282,25,6.7,mw,,,,,iscgem,iscgem894825,2022-04-26T18:18:59.352Z,"38 km SE of Puli, Taiwan",earthquake,,4,0.34,,reviewed,iscgem,iscgem
 1951-10-22T03:29:35.570Z,23.917,121.343,25,7.23,mw,,,,,iscgem,iscgem894824,2022-04-26T18:18:57.636Z,"27 km WSW of Hualien City, Taiwan",earthquake,,4,0.41,,reviewed,iscgem,iscgem
 1951-10-21T21:34:21.540Z,23.487,121.4,25,7.48,mw,,,,,iscgem,iscgem894821,2022-04-26T18:18:55.736Z,"58 km SSW of Hualien City, Taiwan",earthquake,,4,0.2,,reviewed,iscgem,iscgem
-1951-06-20T21:50:22.230Z,23.912,121.632,15,6.11,mw,,,,,iscgem,iscgem894437,2022-04-26T18:15:30.008Z,"7 km SSE of Hualien City, Taiwan",earthquake,,7.1,0.24,,reviewed,iscgem,iscgem
-1950-09-28T03:29:39.600Z,23.095,121.481,15,6.06,mw,,,,,iscgem,iscgem895869,2022-04-26T18:30:28.879Z,"98 km S of Hualien City, Taiwan",earthquake,,7.3,0.2,,reviewed,iscgem,iscgem
-1949-01-19T15:00:06.740Z,23.963,122.103,35,6.42,mw,,,,,iscgem,iscgem896278,2022-04-26T18:33:53.809Z,"50 km E of Hualien City, Taiwan",earthquake,,6.4,0.45,,reviewed,iscgem,iscgem
-1948-12-20T23:07:27.230Z,24.132,122.487,35,6.42,mw,,,,,iscgem,iscgem897684,2022-04-26T18:46:00.595Z,"63 km SW of Yonakuni, Japan",earthquake,,14.3,0.35,,reviewed,iscgem,iscgem
-1948-10-23T04:47:07.480Z,24.339,122.387,35,6.04,mw,,,,,iscgem,iscgem897606,2022-04-26T18:45:32.262Z,"63 km WSW of Yonakuni, Japan",earthquake,,43.3,0.2,,reviewed,iscgem,iscgem
-1948-10-04T05:56:54.420Z,24.228,122.291,15,6.36,mw,,,,,iscgem,iscgem897582,2022-05-09T22:49:20.523Z,"75 km ENE of Hualien City, Taiwan",earthquake,,14.3,0.2,,reviewed,iscgem,iscgem
-1948-10-01T03:10:23.650Z,21.866,121.421,25,6.04,mw,,,,,iscgem,iscgem897576,2022-04-26T18:45:03.134Z,"71 km ESE of Hengchun, Taiwan",earthquake,,12.2,0.2,,reviewed,iscgem,iscgem
-1948-09-24T23:28:05.290Z,21.576,121.913,25,6.23,mw,,,,,iscgem,iscgem897567,2022-04-26T18:45:00.688Z,"124 km N of Basco, Philippines",earthquake,,25,0.61,,reviewed,iscgem,iscgem
-1946-12-04T22:46:53.140Z,23.117,120.904,25,6.71,mw,,,,,iscgem,iscgem898682,2022-04-26T18:58:39.064Z,"Taiwan",earthquake,,6.6,0.47,,reviewed,iscgem,iscgem
-1946-09-09T10:36:37.810Z,23.826,121.949,25,6.1,mw,,,,,iscgem,iscgem898573,2022-04-26T18:57:21.109Z,"38 km ESE of Hualien City, Taiwan",earthquake,,6.4,0.35,,reviewed,iscgem,iscgem
-1946-06-02T01:09:02.230Z,24.405,122.265,15,6.25,mw,,,,,iscgem,iscgem898415,2022-04-26T18:56:10.784Z,"64 km SE of Yilan, Taiwan",earthquake,,43.3,0.33,,reviewed,iscgem,iscgem
-1946-03-16T11:31:28.800Z,24.604,121.491,25,6.34,mw,,,,,iscgem,iscgem898289,2022-04-26T18:54:11.222Z,"31 km WSW of Yilan, Taiwan",earthquake,,11.5,0.23,,reviewed,iscgem,iscgem
-1945-10-21T03:21:09.980Z,23.7,120.779,35,6.23,mw,,,,,iscgem,iscgem899150,2022-04-26T19:03:20.527Z,"5 km SSE of Lugu, Taiwan",earthquake,,7.2,0.33,,reviewed,iscgem,iscgem
-1945-08-01T22:23:18.070Z,23.776,121.979,14,6.46,mw,,,,,iscgem,iscgem899016,2022-04-26T16:05:59.884Z,"44 km ESE of Hualien City, Taiwan",earthquake,,6.4,0.47,,reviewed,iscgem,iscgem
-1944-02-05T17:20:08.530Z,23.571,121.534,20,6.72,mw,,,,,iscgem,iscgem899290,2022-04-26T19:05:38.004Z,"45 km S of Hualien City, Taiwan",earthquake,,10.6,0.36,,reviewed,iscgem,iscgem
-1943-12-02T05:09:00.160Z,22.745,121.519,15,6.79,mw,,,,,iscgem,iscgem900118,2022-04-26T19:15:17.688Z,"114 km ENE of Donggang, Taiwan",earthquake,,12.3,0.24,,reviewed,iscgem,iscgem
-1943-11-24T13:17:15.140Z,22.715,121.708,20,6.73,mw,,,,,iscgem,iscgem900100,2022-04-26T19:14:45.564Z,"126 km NE of Hengchun, Taiwan",earthquake,,12.3,0.38,,reviewed,iscgem,iscgem
-1943-10-22T16:01:22.510Z,24.292,122.112,35,6.33,mw,,,,,iscgem,iscgem900053,2022-04-26T19:13:39.415Z,"62 km NE of Hualien City, Taiwan",earthquake,,8,0.4,,reviewed,iscgem,iscgem
-1942-09-24T03:39:01.250Z,23.884,121.965,10,6.81,mw,,,,,iscgem,iscgem900480,2022-04-26T19:21:05.987Z,"38 km ESE of Hualien City, Taiwan",earthquake,,6.4,0.26,,reviewed,iscgem,iscgem
-1942-05-24T21:19:33.630Z,22.578,121.926,15,6.1,mw,,,,,iscgem,iscgem900299,2022-04-26T19:18:04.139Z,"137 km ENE of Hengchun, Taiwan",earthquake,,11.2,0.38,,reviewed,iscgem,iscgem
 1941-12-16T19:19:43.640Z,23.29,120.419,15,7.22,mw,,,,,iscgem,iscgem901124,2022-04-26T19:32:46.390Z,"18 km NNW of Yujing, Taiwan",earthquake,,3.7,0.2,,reviewed,iscgem,iscgem
-1939-05-16T07:20:17.170Z,23.53,121.602,25,6.2,mw,,,,,iscgem,iscgem901971,2022-04-25T20:46:18.259Z,"49 km S of Hualien City, Taiwan",earthquake,,10.6,0.31,,reviewed,iscgem,iscgem
 1938-12-06T23:00:52.970Z,22.841,121.52,15,7.02,mw,,,,,iscgem,iscgem902854,2022-04-25T21:03:42.663Z,"113 km ESE of Yujing, Taiwan",earthquake,,7.3,0.31,,reviewed,iscgem,iscgem
-1938-10-13T15:26:21.180Z,23.734,121.434,15,6.31,mw,,,,,iscgem,iscgem902713,2022-04-25T20:59:47.160Z,"32 km SSW of Hualien City, Taiwan",earthquake,,10.6,0.27,,reviewed,iscgem,iscgem
 1938-09-07T04:03:19.810Z,23.807,121.506,15,7.09,mw,,,,,iscgem,iscgem902664,2022-04-25T20:58:06.567Z,"21 km SSW of Hualien City, Taiwan",earthquake,,7.1,0.39,,reviewed,iscgem,iscgem
-1938-09-01T02:54:16.590Z,23.874,122.397,25,6.11,mw,,,,,iscgem,iscgem902653,2022-04-25T20:57:35.009Z,"81 km E of Hualien City, Taiwan",earthquake,,14.3,0.2,,reviewed,iscgem,iscgem
-1937-12-17T09:32:16.970Z,23.089,121.393,15,6.6,mw,,,,,iscgem,iscgem903392,2022-04-25T21:18:59.260Z,"95 km E of Yujing, Taiwan",earthquake,,7.3,0.23,,reviewed,iscgem,iscgem
-1937-12-13T18:53:59.150Z,22.69,121.372,15,6.65,mw,,,,,iscgem,iscgem903382,2022-04-25T21:18:53.538Z,"98 km ENE of Donggang, Taiwan",earthquake,,3.8,0.51,,reviewed,iscgem,iscgem
-1937-12-08T20:38:44.940Z,22.785,121.467,15,6.13,mw,,,,,iscgem,iscgem903377,2022-04-25T21:18:49.870Z,"109 km ESE of Yujing, Taiwan",earthquake,,7.3,0.2,,reviewed,iscgem,iscgem
-1937-12-08T08:32:11.030Z,22.91,121.276,15,6.9,mw,,,,,iscgem,iscgem903375,2022-04-25T21:18:48.694Z,"86 km ESE of Yujing, Taiwan",earthquake,,3.8,0.38,,reviewed,iscgem,iscgem
 1936-08-22T06:51:34.870Z,21.963,121.24,15,7.13,mw,,,,,iscgem,iscgem903796,2022-05-09T22:49:06.019Z,"51 km E of Hengchun, Taiwan",earthquake,,4,0.58,,reviewed,iscgem,iscgem
-1935-09-04T03:28:04.680Z,22.392,121.132,15,6.19,mw,,,,,iscgem,iscgem904500,2022-04-25T21:35:46.098Z,"58 km NE of Hengchun, Taiwan",earthquake,,6.2,0.33,,reviewed,iscgem,iscgem
 1935-09-04T01:37:43.770Z,22.331,121.284,15,7.09,mw,,,,,iscgem,iscgem904497,2022-04-25T21:35:44.952Z,"66 km ENE of Hengchun, Taiwan",earthquake,,3.8,0.53,,reviewed,iscgem,iscgem
 1935-04-20T22:02:00.960Z,24.277,120.686,15,7.05,mw,,,,,iscgem,iscgem904224,2022-04-25T21:08:35.683Z,"14 km N of Taichung, Taiwan",earthquake,,4.5,0.59,,reviewed,iscgem,iscgem
-1935-02-09T19:19:42.100Z,24.51,121.893,20,6.2,mw,,,,,iscgem,iscgem904082,2022-04-25T21:31:41.673Z,"30 km SSE of Yilan, Taiwan",earthquake,,8,0.28,,reviewed,iscgem,iscgem
-1934-08-11T08:18:24.810Z,24.666,121.657,10,6.36,mw,,,,,iscgem,iscgem905103,2022-04-25T21:47:34.121Z,"13 km SW of Yilan, Taiwan",earthquake,,11.5,0.33,,reviewed,iscgem,iscgem
-1933-04-19T06:44:45.880Z,24.299,121.474,35,6.81,mw,,,,,iscgem,iscgem905527,2022-04-25T21:53:47.223Z,"38 km NNW of Hualien City, Taiwan",earthquake,,11.5,0.35,,reviewed,iscgem,iscgem
-1932-10-09T12:49:54.230Z,24.131,122.208,35,6.1,mw,,,,,iscgem,iscgem906414,2022-04-25T22:08:49.379Z,"63 km ENE of Hualien City, Taiwan",earthquake,,6.4,0.24,,reviewed,iscgem,iscgem
-1932-08-21T04:15:37.910Z,23.998,122.286,25,6.49,mw,,,,,iscgem,iscgem906345,2022-04-25T22:08:19.395Z,"69 km E of Hualien City, Taiwan",earthquake,,14.3,0.29,,reviewed,iscgem,iscgem
-1931-01-01T23:52:28.390Z,23.951,122.463,15,6.28,mw,,,,,iscgem,iscgem906543,2022-04-25T22:10:53.186Z,"78 km SW of Yonakuni, Japan",earthquake,,14.3,0.49,,reviewed,iscgem,iscgem
-1930-12-22T04:19:46.130Z,23.387,120.478,15,6.21,mw,,,,,iscgem,iscgem907824,2022-04-25T22:35:38.932Z,"11 km SSE of Pizitou, Taiwan",earthquake,,6.8,0.2,,reviewed,iscgem,iscgem
-1930-12-22T00:08:17.330Z,23.418,120.351,15,6.2,mw,,,,,iscgem,iscgem907822,2022-04-25T22:35:33.770Z,"12 km SW of Pizitou, Taiwan",earthquake,,6.8,0.31,,reviewed,iscgem,iscgem
-1930-12-08T08:01:02.810Z,23.262,120.282,15,6.21,mw,,,,,iscgem,iscgem907791,2022-04-25T22:35:19.508Z,"23 km NW of Yujing, Taiwan",earthquake,,6.8,0.27,,reviewed,iscgem,iscgem
-1930-08-20T20:54:08.370Z,24.632,122.228,15,6.68,mw,,,,,iscgem,iscgem907553,2022-04-25T22:31:26.452Z,"50 km ESE of Yilan, Taiwan",earthquake,,8,0.48,,reviewed,iscgem,iscgem
-1929-12-18T06:58:39.690Z,23.96,122.434,35,6.16,mw,,,,,iscgem,iscgem908423,2022-04-25T22:46:58.824Z,"80 km SW of Yonakuni, Japan",earthquake,,14.3,0.31,,reviewed,iscgem,iscgem
-1929-10-24T06:34:19.630Z,22.067,119.539,15,6.29,mw,,,,,iscgem,iscgem908362,2022-04-25T22:45:34.156Z,"100 km SW of Kaohsiung, Taiwan",earthquake,,13.1,0.26,,reviewed,iscgem,iscgem
-1929-09-11T22:18:51.130Z,24.423,121.49,35,6.04,mw,,,,,iscgem,iscgem908307,2022-04-25T22:44:41.115Z,"45 km SW of Yilan, Taiwan",earthquake,,11.5,0.3,,reviewed,iscgem,iscgem
-1929-08-20T16:38:19.920Z,24.073,122.092,15,6.31,mw,,,,,iscgem,iscgem908279,2022-04-25T22:44:04.557Z,"50 km ENE of Hualien City, Taiwan",earthquake,,6.4,0.2,,reviewed,iscgem,iscgem
-1929-08-19T20:44:30.340Z,23.802,122.052,15,6.21,mw,,,,,iscgem,iscgem908277,2022-04-25T22:43:58.685Z,"49 km ESE of Hualien City, Taiwan",earthquake,,6.4,0.38,,reviewed,iscgem,iscgem
-1929-08-19T02:43:09.610Z,23.972,122.167,35,6.63,mw,,,,,iscgem,iscgem908274,2022-04-25T22:43:53.115Z,"57 km E of Hualien City, Taiwan",earthquake,,6.4,0.47,,reviewed,iscgem,iscgem
-1927-08-24T18:08:59.640Z,23.285,120.461,10,6.48,mw,,,,,iscgem,iscgem909473,2022-04-25T23:08:24.593Z,"17 km N of Yujing, Taiwan",earthquake,,6.8,0.32,,reviewed,iscgem,iscgem
-1926-09-12T15:43:48.390Z,22.939,121.387,15,6.53,mw,,,,,iscgem,iscgem910104,2022-04-25T23:19:33.935Z,"97 km ESE of Yujing, Taiwan",earthquake,,7.3,0.21,,reviewed,iscgem,iscgem
-1926-08-03T03:41:38.090Z,21.509,121.654,15,6.6,mw,,,,,iscgem,iscgem909966,2022-04-25T23:17:24.413Z,"108 km ESE of Hengchun, Taiwan",earthquake,,27.8,0.4,,reviewed,iscgem,iscgem
-1925-05-24T01:24:27.590Z,23.803,121.627,15,6.3,mw,,,,,iscgem,iscgem910511,2022-04-25T23:26:09.312Z,"19 km S of Hualien City, Taiwan",earthquake,,7.1,0.2,,reviewed,iscgem,iscgem
 1925-04-16T19:52:40.380Z,21.786,121.096,15,7.13,mw,,,,,iscgem,iscgem910450,2022-04-25T23:25:05.063Z,"43 km ESE of Hengchun, Taiwan",earthquake,,10.6,0.36,,reviewed,iscgem,iscgem
-1925-03-01T12:25:35.990Z,22.886,120.997,15,6.07,mw,,,,,iscgem,iscgem910396,2022-04-25T23:24:49.630Z,"60 km ESE of Yujing, Taiwan",earthquake,,6.6,0.2,,reviewed,iscgem,iscgem
-1924-07-22T14:23:53.050Z,23.589,121.881,15,6.93,mw,,,,,iscgem,iscgem911039,2022-04-25T23:31:41.749Z,"51 km SSE of Hualien City, Taiwan",earthquake,,9.8,0.2,,reviewed,iscgem,iscgem
-1923-11-18T21:29:30.910Z,23.979,122.331,25,6.33,mw,,,,,iscgem,iscgem911741,2022-04-25T23:39:20.454Z,"73 km E of Hualien City, Taiwan",earthquake,,14.3,0.65,,reviewed,iscgem,iscgem
-1922-12-02T03:46:53.340Z,24.43,121.063,35,6.45,mw,,,,,iscgem,iscgem912094,2022-04-25T23:42:32.634Z,"42 km SSE of Hsinchu, Taiwan",earthquake,,4.8,0.22,,reviewed,iscgem,iscgem
-1922-10-27T14:22:49.130Z,23.957,121.54,15,6.65,mw,,,,,iscgem,iscgem912049,2022-04-25T23:42:24.342Z,"6 km WSW of Hualien City, Taiwan",earthquake,,7.1,0.25,,reviewed,iscgem,iscgem
-1922-10-14T23:46:53.150Z,24.612,121.242,15,6.97,mw,,,,,iscgem,iscgem912041,2022-04-25T21:14:16.863Z,"30 km S of Daxi, Taiwan",earthquake,,4.8,0.27,,reviewed,iscgem,iscgem
-1922-10-14T03:56:31.850Z,25.012,121.064,15,6.06,mw,,,,,iscgemsup,iscgemsup912039,2022-05-09T17:57:30.618Z,"23 km W of Taoyuan City, Taiwan",earthquake,,3.2,0.76,,reviewed,iscgemsup,iscgemsup
-1922-09-17T09:59:26.410Z,24.497,121.567,35,6.73,mw,,,,,iscgem,iscgem912017,2022-04-25T23:41:53.982Z,"34 km SSW of Yilan, Taiwan",earthquake,,11.5,0.58,,reviewed,iscgem,iscgem
-1922-09-17T07:23:02.950Z,24.581,121.577,15,6.52,mw,,,,,iscgem,iscgem912015,2022-04-25T23:41:52.622Z,"26 km SW of Yilan, Taiwan",earthquake,,11.5,0.6,,reviewed,iscgem,iscgem
-1922-09-16T22:44:45.980Z,24.445,122.446,35,6.76,mw,,,,,iscgem,iscgem912014,2022-04-25T23:41:51.267Z,"56 km W of Yonakuni, Japan",earthquake,,43.3,0.2,,reviewed,iscgem,iscgem
 1922-09-01T19:16:07.420Z,24.364,122,20,7.69,mw,,,,,iscgem,iscgem911999,2022-04-25T23:41:45.422Z,"50 km SSE of Yilan, Taiwan",earthquake,,8,0.43,,reviewed,iscgem,iscgem
-1922-05-22T18:04:47.830Z,23.842,120.227,15,6.08,mw,,,,,iscgem,iscgem911905,2022-04-25T23:40:54.219Z,"35 km WNW of Douliu, Taiwan",earthquake,,7.7,0.59,,reviewed,iscgem,iscgem
-1922-04-07T15:58:19.950Z,22.94,120.326,15,6.07,mw,,,,,iscgem,iscgem911859,2022-04-25T23:40:29.104Z,"12 km ESE of Tainan, Taiwan",earthquake,,5.9,0.31,,reviewed,iscgem,iscgem
-1920-10-20T10:02:21.690Z,24.359,122.083,15,6.92,mw,,,,,iscgem,iscgem912642,2022-05-09T22:48:47.380Z,"55 km SE of Yilan, Taiwan",earthquake,,8,0.2,,reviewed,iscgem,iscgem
 1920-06-05T04:21:35.170Z,23.688,121.954,20,8.23,mw,,,,,iscgem,iscgem912519,2022-04-25T23:46:53.529Z,"47 km SE of Hualien City, Taiwan",earthquake,,9.8,0.33,,reviewed,iscgem,iscgem
 1919-12-20T20:37:34.180Z,22.529,121.787,20,7.4,mw,,,,,iscgem,iscgem913021,2022-04-25T23:54:30.351Z,"122 km ENE of Hengchun, Taiwan",earthquake,,11.2,0.28,,reviewed,iscgem,iscgem
-1919-12-20T19:34:05.010Z,22.779,121.845,15,6.78,mw,,,,,iscgem,iscgem913020,2022-04-25T23:54:25.034Z,"134 km S of Hualien City, Taiwan",earthquake,,7,0.2,,reviewed,iscgem,iscgem
-1919-10-31T19:02:37.610Z,23.747,120.97,15,6.45,mw,,,,,iscgemsup,iscgemsup912999,2022-05-09T16:04:20.020Z,"22 km E of Lugu, Taiwan",earthquake,,7.2,0.2,,reviewed,iscgemsup,iscgemsup
-1918-05-04T06:06:11.450Z,21.569,120.041,15,6.37,mw,,,,,iscgem,iscgem913138,2022-04-25T23:55:29.470Z,"87 km WSW of Hengchun, Taiwan",earthquake,,7.9,0.51,,reviewed,iscgem,iscgem
-1918-03-27T03:52:19.070Z,24.985,122.098,15,6.36,mw,,,,,iscgemsup,iscgemsup913104,2022-05-09T18:03:40.357Z,"29 km ESE of Jiufen, Taiwan",earthquake,,8.9,0.39,,reviewed,iscgemsup,iscgemsup
-1917-01-04T16:50:06.730Z,24.09,120.832,15,6.5,mw,,,,,iscgem,iscgem913390,2022-04-25T23:57:54.812Z,"16 km ESE of Taichung, Taiwan",earthquake,,6.8,0.2,,reviewed,iscgem,iscgem
-1916-11-14T22:31:41.900Z,23.839,120.432,15,6.39,mw,,,,,iscgem,iscgem913866,2022-04-26T00:03:11.877Z,"18 km NW of Douliu, Taiwan",earthquake,,2.7,0.2,,reviewed,iscgem,iscgem
-1916-08-28T07:27:05.030Z,21.855,122.258,15,6.96,mw,,,,,iscgem,iscgem16958303,2022-04-25T20:34:33.991Z,"157 km E of Hengchun, Taiwan",earthquake,,25,0.21,,reviewed,iscgem,iscgem
-1914-07-06T06:37:33.650Z,24.623,121.039,15,6.32,mw,,,,,iscgem,iscgem913996,2022-04-26T00:07:19.468Z,"21 km SSE of Hsinchu, Taiwan",earthquake,,4.8,0.39,,reviewed,iscgem,iscgem
-1913-04-14T07:48:23.410Z,23.827,122.073,15,6.34,mw,,,,,iscgem,iscgem914054,2022-04-26T00:08:26.215Z,"50 km ESE of Hualien City, Taiwan",earthquake,,6.4,0.24,,reviewed,iscgem,iscgem
-1913-01-08T19:16:50.860Z,22.734,121.029,15,6.2,mw,,,,,iscgemsup,iscgemsup914027,2022-05-09T18:09:23.898Z,"66 km ENE of Donggang, Taiwan",earthquake,,6.2,0.2,,reviewed,iscgemsup,iscgemsup
-1913-01-07T22:51:16.310Z,24.106,122.457,35,6.66,mw,,,,,iscgem,iscgem914026,2022-04-26T00:07:55.893Z,"68 km SW of Yonakuni, Japan",earthquake,,14.3,0.23,,reviewed,iscgem,iscgem
-1912-11-03T06:04:34.860Z,23.699,121.028,25,6.27,mw,,,,,iscgemsup,iscgemsup16958216,2022-05-09T15:16:44.535Z,"28 km E of Lugu, Taiwan",earthquake,,7.2,0.41,,reviewed,iscgemsup,iscgemsup
-1911-03-24T03:18:54.420Z,24.04,121.189,15,6.08,mw,,,,,iscgem,iscgem16958137,2022-04-25T20:32:42.743Z,"23 km ENE of Puli, Taiwan",earthquake,,6.8,0.2,,reviewed,iscgem,iscgem
-1910-11-14T07:34:17.500Z,22.762,121.81,15,6.89,mw,,,,,iscgem,iscgem16958115,2022-04-25T20:31:57.704Z,"136 km S of Hualien City, Taiwan",earthquake,,7,0.23,,reviewed,iscgem,iscgem
-1910-09-01T14:21:12.520Z,25.376,121.964,15,6.8,mw,,,,,iscgemsup,iscgemsup16958103,2022-05-09T15:14:40.710Z,"Taiwan",earthquake,,42,0.42,,reviewed,iscgemsup,iscgemsup
-1910-06-17T05:28:07.510Z,22.505,120.673,35,6.29,mw,,,,,iscgem,iscgem16958091,2022-04-25T20:31:30.903Z,"23 km E of Donggang, Taiwan",earthquake,,8.5,0.22,,reviewed,iscgem,iscgem
-1909-11-21T07:35:59.470Z,24.014,121.735,35,6.81,mw,,,,,iscgem,iscgem16958059,2022-04-25T20:30:41.962Z,"13 km ENE of Hualien City, Taiwan",earthquake,,7.1,0.5,,reviewed,iscgem,iscgem
-1909-04-14T19:53:40.330Z,24.998,121.434,15,6.72,mw,,,,,iscgem,iscgem16958026,2022-04-25T20:29:55.145Z,"3 km WSW of Banqiao, Taiwan",earthquake,,68.9,0.34,,reviewed,iscgem,iscgem
 1908-01-11T03:34:36.180Z,22.074,121.788,15,7.22,mw,,,,,iscgem,iscgem16957982,2022-04-25T20:29:26.059Z,"108 km E of Hengchun, Taiwan",earthquake,,12.8,0.2,,reviewed,iscgem,iscgem
-1907-09-22T12:07:16.490Z,21.845,120.286,10,6.2,mw,,,,,iscgemsup,iscgemsup610548699,2022-05-09T15:25:28.929Z,"50 km WSW of Hengchun, Taiwan",earthquake,,9.7,0.2,,reviewed,iscgemsup,iscgemsup
-1906-04-13T23:52:01.240Z,23.562,120.64,15,6.55,mw,,,,,iscgem,iscgem16957903,2022-04-25T20:24:50.949Z,"19 km SSE of Douliu, Taiwan",earthquake,,6.8,0.2,,reviewed,iscgem,iscgem
-1906-04-13T19:17:48.210Z,23.598,120.463,15,6.99,mw,,,,,iscgem,iscgem16957904,2022-04-25T20:24:57.092Z,"12 km N of Pizitou, Taiwan",earthquake,,6.8,0.39,,reviewed,iscgem,iscgem
-1906-03-26T03:28:39.050Z,22.364,121.603,15,6.13,mw,,,,,iscgem,iscgem16957892,2022-04-25T20:24:48.223Z,"97 km ENE of Hengchun, Taiwan",earthquake,,12.3,0.2,,reviewed,iscgem,iscgem
-1906-03-16T22:42:25.110Z,23.56,120.51,10,6.89,mw,,,,,iscgem,iscgem16957889,2022-04-25T20:24:46.677Z,"10 km NE of Pizitou, Taiwan",earthquake,,6.8,0.39,,reviewed,iscgem,iscgem
